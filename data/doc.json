@@ -1,0 +1,426 @@
+{
+ "overview": [
+  [
+   "Website Design & Development",
+   "Professional, responsive websites that communicate your value clearly and make it easy for customers to take the next step."
+  ],
+  [
+   "Web Applications",
+   "Purpose-built web applications that help teams and customers complete important tasks through clear, practical workflows."
+  ],
+  [
+   "Custom Software Development",
+   "Software shaped around your business processes, requirements and plans for growth."
+  ],
+  [
+   "CRM, ERP & Admin Panels",
+   "Business systems and dashboards that bring records, workflows and operational information into a more organized experience."
+  ],
+  [
+   "E-commerce Solutions",
+   "Online stores designed to present products clearly and support a smooth customer journey from discovery to enquiry or purchase."
+  ],
+  [
+   "Website Maintenance & Improvements",
+   "Ongoing updates, fixes and improvements to help keep your website useful, secure and up to date."
+  ]
+ ],
+ "why": [
+  [
+   "Business-first thinking",
+   "We begin by understanding what you want the website or software to achieve."
+  ],
+  [
+   "Clear scope and communication",
+   "We aim to keep requirements, priorities, timelines and next steps understandable throughout the project."
+  ],
+  [
+   "Designed for real users",
+   "We focus on clarity, usability, responsive layouts and practical user journeys."
+  ],
+  [
+   "Quality-minded delivery",
+   "We plan for testing, feedback and refinement before launch."
+  ],
+  [
+   "A practical long-term approach",
+   "We consider maintainability and future improvements when shaping the solution."
+  ]
+ ],
+ "steps": [
+  [
+   "01 — Discover",
+   "We learn about your business, audience, goals, requirements and constraints."
+  ],
+  [
+   "02 — Define",
+   "We align on scope, key features, priorities, deliverables and an agreed plan."
+  ],
+  [
+   "03 — Design",
+   "We shape the structure and interface so the experience is clear before full development."
+  ],
+  [
+   "04 — Build & Test",
+   "We develop the agreed solution, review functionality and test key user journeys."
+  ],
+  [
+   "05 — Launch & Handover",
+   "We prepare the release, share agreed access and documentation, and discuss ongoing support if needed."
+  ]
+ ],
+ "faqs": [
+  [
+   "What information should I share to get a project estimate?",
+   "Share your main goal, required features, target audience, preferred timeline and any reference websites or existing systems. If details are still evolving, we can begin with an initial discussion."
+  ],
+  [
+   "Can you work with a business that is still defining its idea?",
+   "Yes, where the project fits our capabilities. We can discuss the problem, clarify priorities and identify the next practical step before finalizing scope."
+  ],
+  [
+   "How is project cost determined?",
+   "Cost depends on scope, functionality, integrations, design requirements, timeline and ongoing support. A more specific estimate can be prepared after requirements are reviewed."
+  ],
+  [
+   "Will the website work on mobile devices?",
+   "Responsive behaviour should be included in the agreed website scope and tested across common screen sizes."
+  ],
+  [
+   "Can you maintain or improve an existing website?",
+   "This may be possible depending on the current platform, codebase, access and requested changes. We review the setup before confirming scope."
+  ],
+  [
+   "What happens after I submit an enquiry?",
+   "The team reviews the information, may ask follow-up questions and, if appropriate, arranges a discussion before preparing a scope and estimate."
+  ]
+ ],
+ "cats": [
+  {
+   "id": "A",
+   "title": "Websites & Web Experiences",
+   "items": [
+    [
+     "Business & Corporate Websites",
+     "Professional websites for startups, small businesses, service providers and established companies."
+    ],
+    [
+     "Custom Website Design & Development",
+     "Purpose-built website layouts, page structures and functionality tailored to the brand and business goals."
+    ],
+    [
+     "Landing Pages & Campaign Pages",
+     "Focused pages for services, product launches, lead generation and advertising campaigns."
+    ],
+    [
+     "CMS & Editable Websites",
+     "Websites that allow authorized users to update content, pages, blogs or portfolio items."
+    ],
+    [
+     "WordPress Development",
+     "WordPress business websites, themes, page layouts, plugin configuration and improvements, where appropriate."
+    ],
+    [
+     "Website Redesign & Modernization",
+     "Refresh an outdated website’s layout, content structure, usability, responsiveness and performance."
+    ],
+    [
+     "Website Maintenance & Support",
+     "Updates, backups, small fixes, monitoring and agreed ongoing support."
+    ],
+    [
+     "Website Speed & Performance Optimization",
+     "Review and improve loading performance, image delivery and avoidable front-end bottlenecks."
+    ],
+    [
+     "Multilingual & International Websites",
+     "Websites structured for multiple languages, regions or international audiences when required."
+    ],
+    [
+     "Website Migration",
+     "Move a website to a new host, CMS or platform after checking compatibility, backups and redirect requirements."
+    ]
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Web Applications & Business Portals",
+   "items": [
+    [
+     "Custom Web Applications",
+     "Browser-based applications built around a defined business workflow."
+    ],
+    [
+     "Customer & Client Portals",
+     "Secure portals for customer records, requests, documents, service status or account information."
+    ],
+    [
+     "Admin Panels & Dashboards",
+     "Administrative interfaces for managing records, users, content, operations and reporting."
+    ],
+    [
+     "SaaS Product Development",
+     "Subscription-based web products, subject to agreed scope, security and billing requirements."
+    ],
+    [
+     "Booking & Appointment Systems",
+     "Scheduling, availability, confirmations and reminders for service-based businesses."
+    ],
+    [
+     "Membership & Subscription Platforms",
+     "Member accounts, access rules, renewals and subscription workflows."
+    ],
+    [
+     "Directory & Listing Websites",
+     "Searchable listings, categories, profiles and enquiry flows."
+    ],
+    [
+     "Marketplace Development",
+     "Multi-vendor catalogues, seller workflows, orders and payouts where scope and integrations are defined."
+    ],
+    [
+     "Workflow & Approval Systems",
+     "Internal forms, task flows, approvals, status tracking and notifications."
+    ]
+   ]
+  },
+  {
+   "id": "C",
+   "title": "E-commerce & Online Selling",
+   "items": [
+    [
+     "E-commerce Websites & Online Stores",
+     "Product catalogues, product detail pages, carts and checkout."
+    ],
+    [
+     "Shopify / WooCommerce Stores",
+     "Store setup, theme customization, product organization and supported integrations."
+    ],
+    [
+     "Custom E-commerce Platforms",
+     "Tailored online selling workflows when standard platforms are not sufficient."
+    ],
+    [
+     "Payment Gateway Integration",
+     "Connect supported payment providers, subject to account eligibility and provider approval."
+    ],
+    [
+     "Inventory & Order Management",
+     "Product stock, order status, fulfilment and related business workflows."
+    ],
+    [
+     "Subscription Commerce",
+     "Recurring orders, renewals and customer subscription flows."
+    ],
+    [
+     "B2B Ordering Portals",
+     "Business customer accounts, negotiated catalogues or quote-based ordering where required."
+    ]
+   ]
+  },
+  {
+   "id": "D",
+   "title": "Custom Software, CRM, ERP & Operations",
+   "items": [
+    [
+     "Custom Business Software",
+     "Applications built for a company’s specific processes and operational needs."
+    ],
+    [
+     "CRM & Lead Management Systems",
+     "Lead capture, customer records, follow-ups, pipeline stages and reports."
+    ],
+    [
+     "ERP & Business Management Systems",
+     "Connected workflows for selected business functions, based on scope."
+    ],
+    [
+     "POS & Billing Systems",
+     "Point-of-sale workflows, billing, receipts and supported integrations."
+    ],
+    [
+     "Restaurant & Cafe Management",
+     "Menu, table, order, kitchen, billing and reporting workflows where required."
+    ],
+    [
+     "Inventory & Stock Management",
+     "Stock movement, product records, low-stock alerts and reports."
+    ],
+    [
+     "School, Coaching & Education Systems",
+     "Student records, attendance, fees, courses or administrative workflows."
+    ],
+    [
+     "Healthcare & Appointment Systems",
+     "Appointment and administrative workflows; sensitive data and compliance needs must be scoped carefully."
+    ],
+    [
+     "HR, Staff & Role Management",
+     "Staff records, roles, permissions, attendance or task workflows as agreed."
+    ],
+    [
+     "Reports & Business Dashboards",
+     "Operational summaries and visual reports based on available data."
+    ]
+   ]
+  },
+  {
+   "id": "E",
+   "title": "Mobile Applications",
+   "items": [
+    [
+     "Android App Development",
+     "Android applications based on agreed features and supported devices."
+    ],
+    [
+     "iOS App Development",
+     "iPhone/iPad applications with platform-specific requirements."
+    ],
+    [
+     "Cross-platform App Development",
+     "One shared codebase approach where suitable for the product."
+    ],
+    [
+     "App Backend & API Development",
+     "Backend services, user accounts, notifications and integrations supporting mobile apps."
+    ],
+    [
+     "App Maintenance & Enhancements",
+     "Bug fixes, compatibility updates and new features for existing applications."
+    ]
+   ]
+  },
+  {
+   "id": "F",
+   "title": "UI/UX, Branding & Creative",
+   "items": [
+    [
+     "UI/UX Design & Prototyping",
+     "User flows, wireframes, interface design and clickable prototypes."
+    ],
+    [
+     "Website & App Interface Design",
+     "Design systems and page/screen layouts for web and mobile experiences."
+    ],
+    [
+     "Logo & Brand Identity",
+     "Logo concepts, color palette, typography and basic brand assets."
+    ],
+    [
+     "Graphic & Marketing Design",
+     "Selected digital creatives, banners, presentation visuals and campaign assets."
+    ],
+    [
+     "Design-to-Development Handoff",
+     "Design specifications and assets prepared for implementation."
+    ]
+   ]
+  },
+  {
+   "id": "G",
+   "title": "SEO, Digital Marketing & Online Presence",
+   "items": [
+    [
+     "Technical & On-page SEO",
+     "Site structure, metadata, indexing basics, internal links and technical checks."
+    ],
+    [
+     "Local SEO",
+     "Business profile and location-focused visibility setup, where relevant."
+    ],
+    [
+     "Content & Blog Strategy",
+     "Content planning and on-page content support, based on agreed scope."
+    ],
+    [
+     "Search Engine Marketing / Paid Ads",
+     "Campaign setup and management, with advertising spend quoted separately."
+    ],
+    [
+     "Social Media Marketing",
+     "Content planning, publishing support and channel management if offered."
+    ],
+    [
+     "Conversion Rate Improvement",
+     "Review page clarity, user journeys, calls to action and enquiry friction."
+    ],
+    [
+     "Analytics & Reporting Setup",
+     "Analytics and conversion tracking configured with appropriate privacy controls."
+    ]
+   ]
+  },
+  {
+   "id": "H",
+   "title": "Integrations, Automation, AI & Data",
+   "items": [
+    [
+     "API Development & Integration",
+     "Connect websites, applications and supported third-party services."
+    ],
+    [
+     "Business Process Automation",
+     "Reduce repetitive manual steps using agreed rules, workflows and integrations."
+    ],
+    [
+     "AI Chatbots & Website Assistants",
+     "Conversational interfaces for defined information and support tasks, with clear limitations."
+    ],
+    [
+     "AI-enabled Business Workflows",
+     "AI-assisted classification, document or content workflows where appropriate and tested."
+    ],
+    [
+     "WhatsApp, Email & SMS Integrations",
+     "Notifications and communication flows through supported providers and approved accounts."
+    ],
+    [
+     "Data Import, Export & Migration",
+     "Move structured data between systems after mapping, validation and backup planning."
+    ],
+    [
+     "Third-party Software Integration",
+     "Connect supported CRM, payment, accounting, analytics or business tools."
+    ]
+   ]
+  },
+  {
+   "id": "I",
+   "title": "Cloud, Hosting, Security & Technical Support",
+   "items": [
+    [
+     "Domain, Hosting & Business Email Setup",
+     "Setup assistance for domain, hosting, DNS and business email; third-party charges are separate."
+    ],
+    [
+     "Cloud Deployment & Configuration",
+     "Deployment on a suitable provider based on traffic, stack and maintenance needs."
+    ],
+    [
+     "SSL / HTTPS & Basic Security Hardening",
+     "HTTPS setup and agreed security best practices."
+    ],
+    [
+     "Backup & Recovery Planning",
+     "Backup schedule and restore instructions matched to the hosting setup."
+    ],
+    [
+     "Bug Fixes & Technical Support",
+     "Troubleshooting and repairs under an agreed support scope."
+    ],
+    [
+     "Application Modernization",
+     "Improve or migrate an existing application after a technical review."
+    ],
+    [
+     "QA & Software Testing",
+     "Functional, responsive, regression and acceptance testing according to agreed scope."
+    ],
+    [
+     "Dedicated Developer / Team Augmentation",
+     "Project-based specialist support where qualified resources are available."
+    ]
+   ]
+  }
+ ]
+}

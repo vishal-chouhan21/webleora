@@ -1,0 +1,14 @@
+# Webleora – Next.js website (navy & gold)
+
+    npm i
+    npm run dev      # http://localhost:3000
+
+## Contact form
+Sends email from the Next.js API route `app/api/contact/route.js` (works on Vercel).
+Local: put SMTP details in `.env.local` (see `.env.example`). Vercel: add the same keys under Project Settings > Environment Variables.
+The old PHP version is still in `php/` (not used unless you host PHP yourself).
+
+## Edit
+- `config/site.js` – email, phone, social links, home-page stats
+- `data/content.js` – services & concept projects
+- `public/images/logo.png`, `footer-logo.png`, `hero` look in `public/css/webleora.css`
