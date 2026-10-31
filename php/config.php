@@ -11,5 +11,5 @@ return [
   'to_email'    => 'mariah.lang@ethereal.email', // where enquiries are delivered
   'auto_reply'  => true,                // send a thank-you email to the visitor
   // Origins allowed to post the form (needed only if the site and PHP are on different domains/ports)
-  'allowed_origins' => ['http://localhost:3000', 'https://webleora.vercel.app', 'https://webleora.com', 'https://www.webleora.com'],
+  'allowed_origins' => ['http://localhost:3000', 'https://yourdomain.com'],
 ];

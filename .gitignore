@@ -1,4 +1,4 @@
 node_modules
 .next
 .env.local
-php/config.example.php
+php/config.php

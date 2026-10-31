@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '/php/contact.php';
+const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '/api/contact';
 export default function ContactForm({ serviceOptions }) {
   const [state, setState] = useState({ status: 'idle', msg: '' });
   async function onSubmit(e) {

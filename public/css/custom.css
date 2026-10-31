@@ -47,11 +47,11 @@
 /************************************/	
 
 :root{
-	--primary-color				: #010535;
-	--secondary-color			: #F2F2F5;
-	--text-color				: #707070;
-	--accent-color				: #4D51AB;
-	--accent-secondary-color	: #55CEE3;
+	--primary-color				: #0B2239;
+	--secondary-color			: #F7F4EC;
+	--text-color				: #5C6773;
+	--accent-color				: #C9A05A;
+	--accent-secondary-color	: #E2C27E;
 	--white-color				: #FFFFFF;
 	--divider-color				: #F5F5F5;
 	--dark-divider-color		: #FFFFFF33;
@@ -845,7 +845,7 @@ header.main-header .header-sticky.active{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: linear-gradient(270deg, rgba(1, 5, 53, 0.28) 43.57%, rgba(1, 5, 53, 0.8) 100%);
+	background: linear-gradient(270deg, rgba(11, 34, 57, 0.28) 43.57%, rgba(11, 34, 57, 0.8) 100%);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -889,7 +889,7 @@ header.main-header .header-sticky.active{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(270deg, rgba(1, 5, 53, 0.28) 43.57%, rgba(1, 5, 53, 0.8) 100%);
+    background: linear-gradient(270deg, rgba(11, 34, 57, 0.28) 43.57%, rgba(11, 34, 57, 0.8) 100%);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -3067,7 +3067,7 @@ header.main-header .header-sticky.active{
     bottom: 0;
     left: 0;
     right: 0;
-	background: linear-gradient(270deg, rgba(1, 5, 53, 0.28) 43.57%, rgba(1, 5, 53, 0.8) 100%);
+	background: linear-gradient(270deg, rgba(11, 34, 57, 0.28) 43.57%, rgba(11, 34, 57, 0.8) 100%);
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -3128,7 +3128,7 @@ header.main-header .header-sticky.active{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(242, 242, 245, 0.6) 99.12%, #F2F2F5 99.38%);
+    background: linear-gradient(90deg, rgba(242, 242, 245, 0.6) 99.12%, #F7F4EC 99.38%);
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -3879,7 +3879,7 @@ header.main-header .header-sticky.active{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(180deg, rgba(1, 5, 53, 0) 80.06%, var(--primary-color) 100%);
+	background: linear-gradient(180deg, rgba(11, 34, 57, 0) 80.06%, var(--primary-color) 100%);
 	width: 100%;
 	height: 100%;
 }

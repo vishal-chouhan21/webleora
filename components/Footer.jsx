@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="main-footer"><div className="container"><div className="row">
       <div className="col-lg-12"><div className="footer-header">
-        <div className="footer-logo"><img src="/images/footer-logo.svg" alt="Webleora" /></div>
+        <div className="footer-logo"><img src="/images/footer-logo.png" alt="Webleora" style={{ height: 80, width: "auto" }} /></div>
         <div className="footer-social-links"><ul>
           {site.social.linkedin && <li><a href={site.social.linkedin} aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a></li>}
           {site.social.x && <li><a href={site.social.x} aria-label="X"><i className="fa-brands fa-x-twitter"></i></a></li>}

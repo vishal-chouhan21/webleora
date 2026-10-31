@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: { default: 'Webleora | Website Development & Digital Solutions', template: '%s | Webleora' },
   description: 'Webleora helps businesses build professional websites, web applications and custom digital solutions shaped around their goals and workflows.',
-  icons: { icon: '/images/favicon.svg' },
+  icons: { icon: '/images/favicon.png' },
 };
 export default function RootLayout({ children }) {
   return (

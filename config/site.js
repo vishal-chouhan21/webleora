@@ -1,9 +1,16 @@
 // Edit these before launch. Empty values are hidden automatically on the site.
 module.exports = {
   name: 'Webleora',
-  tagline: 'Thoughtful Digital Solutions. Built Around Your Business.',
-  email: 'info@yourdomain.com',   // ADD OFFICIAL EMAIL
-  phone: '',                      // optional, e.g. '+91 00000 00000'
-  location: '',                   // optional, e.g. 'City, Country'
-  social: { linkedin: '', facebook: '', instagram: '', x: '' }, // verified URLs only
+  tagline: 'Your Trust, Our Commitment',
+  email: 'info@webleora.com',
+  phone: '+91 98765 43210',      // replace with your real number
+  location: '',
+  social: { linkedin: '', facebook: '', instagram: '', youtube: '', x: '' }, // verified URLs only
+  // Shown on the home page. Only keep numbers that are true, or set to [] to hide the box.
+  stats: [
+    ['fa-users', '150+', 'Happy Clients'],
+    ['fa-file-lines', '300+', 'Projects Delivered'],
+    ['fa-award', '5+', 'Years of Experience'],
+    ['fa-chart-simple', '98%', 'Client Satisfaction'],
+  ],
 };
