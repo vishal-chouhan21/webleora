@@ -1287,7 +1287,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-services {
-	background: var(--secondary-color);
+	background: url(../images/why-choose-bg.png), var(--primary-color);
 	padding: 100px 0 70px;
 }
 
@@ -1640,7 +1640,7 @@ header.main-header .header-sticky.active {
 	position: absolute;
 	right: 30px;
 	left: 30px;
-	bottom: 30px;
+	bottom: 50px;
 	transform: translateY(50px);
 	opacity: 0;
 	visibility: hidden;
@@ -2687,7 +2687,7 @@ header.main-header .header-sticky.active {
 }
 
 .our-faqs.home-our-faqs {
-	background: var(--secondary-color);
+	background: url(../images/why-choose-bg.png), var(--primary-color);
 }
 
 .faq-content {
@@ -3165,13 +3165,13 @@ header.main-header .header-sticky.active {
 	background: var(--white-color);
 	border-radius: 30px;
 	padding: 25px 30px;
-	box-shadow: 0px 0px 100px 2px #0000000D;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	margin-bottom: 30px;
 	overflow: hidden;
 	transition: all 0.4s ease-in-out;
 }
 
-.mission-vision-item:before {
+/* .mission-vision-item:before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -3182,7 +3182,7 @@ header.main-header .header-sticky.active {
 	background: linear-gradient(90.15deg, var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%);
 	transition: all 0.4s ease-in-out;
 	z-index: 0;
-}
+} */
 
 .mission-vision-item:hover:before {
 	top: 0;
@@ -4357,7 +4357,7 @@ header.main-header .header-sticky.active {
 }
 
 .page-projects .project-item .project-image figure::before {
-	background: linear-gradient(180deg, rgba(85, 202, 225, 0) 58.63%, var(--accent-color) 110.88%);
+	background: linear-gradient(180deg, rgb(85 105 225 / 40%) 58.63%, var(--accent-color) 110.88%);
 	height: 100%;
 }
 
@@ -7469,5 +7469,278 @@ header.main-header .header-sticky.active {
 	.google-map-iframe,
 	.google-map-iframe iframe {
 		height: 350px;
+	}
+}
+
+/* =========================================================
+   Contact page — override CSS (Light Mode)
+   Theme tokens: mapped for a clean, accessible light theme.
+   Fallback variables preserve existing global color bindings.
+   ========================================================= */
+.wl-contact {
+	--wl-accent: var(--accent-color, #2563eb);
+	/* High-contrast blue accent */
+	--wl-bg: var(--light-bg, #f8fafc);
+	/* Clean off-white page background */
+	--wl-card: #ffffff;
+	/* Pure white card surface */
+	--wl-field: #ffffff;
+	/* Input background */
+	--wl-line: #e2e8f0;
+	/* Crisp border color */
+	--wl-text: var(--text-color, #0f172a);
+	/* High-contrast deep slate text */
+	--wl-muted: #64748b;
+	/* Balanced secondary/helper text */
+
+	background: var(--wl-bg);
+	color: var(--wl-text);
+	padding: 90px 0;
+}
+
+.wl-contact__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+	gap: 48px;
+	align-items: start;
+}
+
+/* ---------- Form card ---------- */
+.wl-form-card {
+	background: var(--wl-card);
+	padding: 32px 28px 36px;
+	border-radius: 6px;
+	border: 1px solid var(--wl-line);
+	box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.wl-form-card__sub {
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--wl-accent);
+	margin-bottom: 4px;
+}
+
+.wl-form-card__title {
+	font-size: clamp(26px, 3vw, 34px);
+	line-height: 1.15;
+	color: var(--wl-text);
+	margin: 0 0 24px;
+}
+
+.wl-form-card label {
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--wl-muted);
+	margin-bottom: 6px;
+}
+
+.wl-form-card .form-group,
+.wl-form-card .mb-3,
+.wl-form-card .col-md-12,
+.wl-form-card .col-md-6 {
+	margin-bottom: 16px;
+}
+
+.wl-form-card input:not([type='checkbox']):not([type='radio']),
+.wl-form-card select,
+.wl-form-card textarea {
+	width: 100%;
+	background: var(--wl-field);
+	color: var(--wl-text);
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	padding: 11px 14px;
+	font-size: 14px;
+	line-height: 1.4;
+	box-shadow: none;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wl-form-card textarea {
+	min-height: 130px;
+	resize: vertical;
+}
+
+.wl-form-card input::placeholder,
+.wl-form-card textarea::placeholder {
+	color: #94a3b8;
+}
+
+.wl-form-card select option {
+	background: #ffffff;
+	color: var(--wl-text);
+}
+
+.wl-form-card input:focus-visible,
+.wl-form-card select:focus-visible,
+.wl-form-card textarea:focus-visible {
+	border-color: var(--wl-accent);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Submit button — full-width outlined pill */
+.wl-form-card button[type='submit'],
+.wl-form-card .btn-default {
+	display: block;
+	width: 100%;
+	margin-top: 8px;
+	padding: 14px 24px;
+	background: transparent;
+	color: var(--wl-text);
+	border: 1.5px solid var(--wl-text);
+	border-radius: 999px;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.wl-form-card button[type='submit']::before,
+.wl-form-card button[type='submit']::after,
+.wl-form-card .btn-default::before,
+.wl-form-card .btn-default::after {
+	display: none;
+}
+
+.wl-form-card button[type='submit']:hover,
+.wl-form-card .btn-default:hover {
+	background: var(--wl-accent);
+	border-color: var(--wl-accent);
+	color: #ffffff;
+}
+
+.wl-form-card button[type='submit']:focus-visible {
+	outline: 2px solid var(--wl-accent);
+	outline-offset: 3px;
+}
+
+.wl-form-card small,
+.wl-form-card .form-note {
+	display: block;
+	margin-top: 14px;
+	font-size: 12.5px;
+	color: var(--wl-muted);
+}
+
+.wl-form-card small a {
+	color: var(--wl-accent);
+}
+
+/* ---------- Right side ---------- */
+.wl-contact__intro {
+	font-size: 14.5px;
+	line-height: 1.7;
+	color: var(--wl-muted);
+	margin: 0 0 34px;
+	max-width: 62ch;
+}
+
+.wl-info-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 34px 20px;
+	margin-bottom: 34px;
+}
+
+.wl-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+.wl-info__icon {
+	width: 38px;
+	height: 38px;
+	margin-bottom: 14px;
+	color: var(--wl-accent);
+	transition: transform 0.2s ease;
+}
+
+.wl-info__icon svg {
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.wl-info h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--wl-text);
+	margin: 0 0 4px;
+	text-transform: none;
+}
+
+.wl-info p {
+	font-size: 14px;
+	color: var(--wl-muted);
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+a.wl-info:hover .wl-info__icon {
+	transform: translateY(-3px);
+}
+
+.wl-map {
+	border: 1px solid var(--wl-line);
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--wl-card);
+	box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.wl-map iframe {
+	display: block;
+	width: 100%;
+	height: 270px;
+	border: 0;
+	filter: none;
+	/* Native clear map display for light mode */
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+	.wl-contact {
+		padding: 60px 0;
+	}
+
+	.wl-contact__grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 575px) {
+	.wl-form-card {
+		padding: 24px 18px 28px;
+	}
+
+	.wl-info-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.wl-map iframe {
+		height: 230px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.wl-info__icon,
+	.wl-form-card input,
+	.wl-form-card button {
+		transition: none;
 	}
 }
