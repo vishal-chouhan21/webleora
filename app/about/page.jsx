@@ -3,10 +3,17 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import { why } from '@/data/content';
 
 export const metadata = {
-  title: 'About Webleora | Website, Web App & Digital Solutions Company',
+  title: { absolute: 'About Webleora | Digital Studio' },
   description:
-    'Webleora builds fast, user-friendly websites, web apps and digital solutions that help businesses grow online. Clear communication, careful development, reliable delivery.',
+    'Learn about Webleora’s practical approach to websites, applications, design and business software.',
 };
+
+const guides = [
+  ['Clarity', 'We aim to explain requirements, decisions and next steps in straightforward language.'],
+  ['Practicality', 'We focus on the features and improvements that serve the project’s real purpose.'],
+  ['Careful Planning', 'We agree on scope and deliverables before development begins.'],
+  ['Responsible Delivery', 'We discuss handover, access and support as part of the project agreement.'],
+];
 
 export default function About() {
   return (
@@ -114,11 +121,11 @@ export default function About() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <Title sub="what to expect" dark>
-                Why Businesses Choose Webleora
+              <Title sub="our approach" dark>
+                What Guides Our Work
               </Title>
               <div className="why-choose-list">
-                {why.map(([t, d], i) => (
+                {guides.map(([t, d], i) => (
                   <div className="why-choose-item" key={t}>
                     <div className="icon-box">
                       <img src={`/images/icon-why-choose-${(i % 3) + 1}.svg`} alt="" />
@@ -135,7 +142,28 @@ export default function About() {
         </div>
       </div>
 
-      <Cta />
+      <div className="page-section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="mission-vision-item" style={{ maxWidth: 880, margin: '0 auto', textAlign: 'center' }}>
+                <h3>A Collaborative Process</h3>
+                <p>
+                  We work with clients to understand their requirements, review options and make decisions together.
+                  Depending on the service and project needs, specialist partners may be involved. The delivery approach and
+                  responsibilities are discussed before work begins.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Cta
+        title="Let’s talk about what you need"
+        text="Share your idea or current challenge, and we’ll discuss a practical way forward."
+        btn="Contact Webleora"
+      />
     </>
   );
 }

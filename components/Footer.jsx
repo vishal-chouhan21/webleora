@@ -17,16 +17,16 @@ export default function Footer() {
         <p>Webleora builds thoughtful digital experiences and business-focused software to help organizations strengthen their online presence and improve how they work.</p>
         <p><strong style={{ color: '#fff' }}>Planning a digital project? Let’s discuss it.</strong></p>
         <Link href="/contact" className="btn-default btn-highlighted">Discuss Your Project</Link></div></div>
-      <div className="col-lg-2 col-md-3 col-6"><div className="footer-links footer-quick-links"><h3>Quick link</h3><ul>
+      <div className="col-lg-2 col-md-3 col-6"><div className="footer-links footer-quick-links"><h3>Quick Links</h3><ul>
         <li><Link href="/">Home</Link></li><li><Link href="/services">Services</Link></li><li><Link href="/about">About Us</Link></li>
         <li><Link href="/our-work">Our Work</Link></li><li><Link href="/contact">Contact</Link></li></ul></div></div>
       <div className="col-lg-3 col-md-3 col-6"><div className="footer-links"><h3>Services</h3><ul>
-        {services.slice(0, 5).map((s) => <li key={s.slug}><Link href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></div></div>
+        {services.map((s) => <li key={s.slug}><Link href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></div></div>
       <div className="col-lg-3 col-md-3 col-6"><div className="footer-links"><h3>Contact</h3><ul>
         {site.email && <li><a href={`mailto:${site.email}`}>{site.email}</a></li>}
         {site.phone && <li><a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></li>}
         {site.location && <li>{site.location}</li>}
-        <li><Link href="/privacy-policy">Privacy Policy</Link></li><li><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li></ul></div></div>
+        <li><Link href="/privacy-policy">Privacy Policy</Link></li><li><Link href="/terms-and-conditions">Terms &amp; Conditions</Link></li><li><Link href="/cookie-policy">Cookie Policy</Link></li></ul></div></div>
     </div></div>
     <div className="footer-copyright"><div className="container"><div className="row"><div className="col-md-12"><div className="footer-copyright-text">
       <p>© {new Date().getFullYear()} Webleora. All rights reserved.</p></div></div></div></div></div></footer>);
