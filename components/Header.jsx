@@ -30,7 +30,7 @@ export default function Header() {
               <li className="nav-item"><Link className="nav-link" href="/our-work">Our Work</Link></li>
               <li className="nav-item"><Link className="nav-link" href="/contact">Contact Us</Link></li>
             </ul></div>
-            <div className="header-btn"><Link href="/contact" className="btn-default">Get a Quote</Link></div></div>
+            <div className="header-btn"><Link href="/contact" className="btn-default">Start a Project</Link></div></div>
           <div className="navbar-toggle"><a href="#" role="button" aria-label="Menu" className={'slicknav_btn ' + (open ? 'slicknav_open' : 'slicknav_collapsed')} onClick={(e) => { e.preventDefault(); setOpen(!open); }}>
             <span className="slicknav_icon"><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span></span></a></div>
         </div></nav>

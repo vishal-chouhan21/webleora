@@ -4,7 +4,11 @@
 const backend = process.env.PHP_BACKEND_URL || "http://127.0.0.1:8000";
 
 module.exports = {
-  turbopack: { root: __dirname }, // optional: keep if you saw a "multiple lockfiles" / wrong root warning
+  turbopack: { root: __dirname },
+  experimental: {
+    cpus: 1,
+    workerThreads: false,
+  },
   async rewrites() {
     return [{ source: "/php/:path*", destination: `${backend}/:path*` }];
   },

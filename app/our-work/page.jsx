@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { PageHeader, Title, Cta } from '@/components/ui';
 import { projects } from '@/data/content';
-export const metadata = { title: 'Our Work' };
+export const metadata = {
+  title: { absolute: 'Our Work | Webleora Concept Projects' },
+  description:
+    'Explore concept projects showing how Webleora approaches websites, portals, online stores and CRM systems.',
+};
 export default function Work() {
   return (<>
     <PageHeader title="Our Work" />

@@ -7,10 +7,19 @@ import { ServiceCards, ProjectList } from "@/components/HoverCards";
 import Accordion from "@/components/Accordion";
 
 export const metadata = {
-  title: { absolute: "Webleora | Website Development & Digital Solutions" },
+  title: { absolute: "Webleora | Websites, Apps & Software" },
+  description:
+    "Webleora designs and develops websites, apps and business software around your goals and workflows. Tell us about your project.",
 };
 
-const heroWords = ["Technology", "People", "Ideas", "Growth"];
+const heroWords = ["Websites", "Web Apps", "Software", "E-commerce"];
+
+const trustPoints = [
+  "Clear scope before we start",
+  "Written estimate",
+  "Regular progress updates",
+  "Testing before launch",
+];
 
 const quickServices = [
   [
@@ -38,10 +47,10 @@ const quickServices = [
     "/services",
   ],
   [
-    "fa-cloud",
-    "IT Consulting",
-    "Expert guidance for your digital transformation.",
-    "/services",
+    "fa-cart-shopping",
+    "E-commerce Solutions",
+    "Online stores that present products clearly and take orders.",
+    "/services/e-commerce-solutions",
   ],
 ];
 
@@ -63,29 +72,38 @@ export default function Home() {
           <div className="wl-home-hero-inner">
             <div className="wl-home-hero-copy">
               <span className="wl-kicker">
-                IT Solutions for a Brighter Tomorrow
+                Web, Software &amp; Digital Solutions
               </span>
 
               <h1>
-                Ideas Today,
-                <br />
-                <em>Digital Growth</em> Tomorrow
+                Websites, Web Apps &amp; Business Software{" "}
+                <em>for Growing Companies</em>
               </h1>
 
               <p>
-                We build innovative web, software and digital solutions that
-                help businesses grow, adapt and stay ahead in a digital world.
+                Webleora designs and builds websites, web applications, CRMs
+                and online stores that help businesses get more enquiries and
+                run more smoothly.
               </p>
 
               <div className="wl-home-btns">
-                <Link href="/services" className="wl-h-btn wl-h-btn-gold">
-                  Our Services
+                <Link href="/contact" className="wl-h-btn wl-h-btn-gold">
+                  Start a Project
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <Link href="/contact" className="wl-h-btn wl-h-btn-line">
-                  Let&apos;s Talk
+                <Link href="/services" className="wl-h-btn wl-h-btn-line">
+                  Explore Our Services
                 </Link>
               </div>
+
+              <ul className="wl-trust" aria-label="How we work">
+                {trustPoints.map((t) => (
+                  <li key={t}>
+                    <i className="fa-solid fa-check" aria-hidden="true" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -93,8 +111,10 @@ export default function Home() {
         {/* Right side artwork */}
         <div className="wl-home-hero-art" aria-hidden="true">
           <div className="wl-home-hero-photo">
-            {/* Replace with your office / business photo */}
-            <img src="/images/hero-image55.jpg" alt="" />
+            <img
+              src="/images/hero-image55.jpg"
+              alt="Webleora - Websites, Web Apps & Business Software"
+            />
           </div>
           <ul className="wl-home-hero-words">
             {heroWords.map((w) => (
@@ -158,9 +178,8 @@ export default function Home() {
                 A Trusted Partner <em>in Your Digital Journey</em>
               </h2>
               <p>
-                Webleora International is a results-driven IT solutions company
-                focused on delivering innovative, reliable and scalable digital
-                solutions. We combine technology, creativity and strategy to
+                Webleora is an IT solutions company
+                focused on practical, reliable and scalable digital solutions. We combine technology, creativity and strategy to
                 help businesses build stronger digital presence and achieve
                 long-term growth.
               </p>

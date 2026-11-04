@@ -4,7 +4,7 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { services, faqs, steps } from '@/data/content';
 export const generateStaticParams = () => services.map((s) => ({ slug: s.slug }));
-export const generateMetadata = async ({ params }) => { const { slug } = await params; const s = services.find((x) => x.slug === slug); return { title: s ? `${s.title} for Your Business` : 'Service' }; };
+export const generateMetadata = async ({ params }) => { const { slug } = await params; const s = services.find((x) => x.slug === slug); return { title: s ? `${s.title} for Your Business` : 'Service', description: s ? `Webleora helps you with ${s.need}. See what is included, how we work and common questions.` : undefined }; };
 export default async function Service({ params }) {
   const { slug } = await params;
   const s = services.find((x) => x.slug === slug);
@@ -26,7 +26,7 @@ export default async function Service({ params }) {
         <ul className="wl-bullets">{s.affects.map((a) => <li key={a}>{a}</li>)}</ul>
         <p><Link href="/contact" className="btn-default btn-highlighted">Discuss Your {s.title} Project</Link></p>
       </div></div></div></div>
-    <div className="our-faqs"><div className="container"><Title sub="faq">Common questions</Title><Accordion items={faqs} /></div></div>
+    <div className="our-faqs"><div className="container"><Title sub="faq">Common questions</Title><Accordion items={s.faqs || faqs} /></div></div>
     <Cta />
   </>);
 }

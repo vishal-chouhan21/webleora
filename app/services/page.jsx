@@ -2,7 +2,11 @@ import Link from 'next/link';
 import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { cats, catIntro, faqs } from '@/data/content';
-export const metadata = { title: 'Our Services', description: 'Explore Webleora’s website development, web application and custom software capabilities for business needs.' };
+export const metadata = {
+  title: { absolute: 'Webleora Services | Web, Apps & Software' },
+  description:
+    'Explore Webleora’s services, including websites, web apps, mobile apps, design, custom software and business systems.',
+};
 export default function Services() {
   return (<>
     <PageHeader title="Services" />

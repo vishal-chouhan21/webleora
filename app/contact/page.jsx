@@ -4,7 +4,11 @@ import ContactForm from '@/components/ContactForm';
 import { cats } from '@/data/content';
 
 
-export const metadata = { title: 'Discuss Your Project | Contact Webleora' };
+export const metadata = {
+  title: { absolute: 'Contact Webleora | Start a Project' },
+  description:
+    'Tell Webleora about your website, app or software project and receive a clear next step.',
+};
 
 /* Outline icons (inline so no extra assets are needed) */
 const Icon = {
