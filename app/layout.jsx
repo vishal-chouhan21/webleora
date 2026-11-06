@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 export const metadata = {
   title: { default: 'Webleora | Website Development & Digital Solutions', template: '%s | Webleora' },
   description: 'Webleora helps businesses build professional websites, web applications and custom digital solutions shaped around their goals and workflows.',
@@ -16,6 +17,6 @@ export default function RootLayout({ children }) {
       <link href="/css/all.min.css" rel="stylesheet" />
       <link href="/css/custom.css" rel="stylesheet" />
       <link href="/css/webleora.css" rel="stylesheet" />
-    </head><body><Header />{children}<Footer /></body></html>
+    </head><body><Header />{children}<Footer /><WhatsAppButton /></body></html>
   );
 }

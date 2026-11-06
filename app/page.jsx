@@ -5,6 +5,7 @@ import { services, projects, faqs, steps, why } from "@/data/content";
 import { Title, Cta } from "@/components/ui";
 import { ServiceCards, ProjectList } from "@/components/HoverCards";
 import Accordion from "@/components/Accordion";
+import WebsiteInvestmentSection from "@/components/WebsiteInvestmentSection";
 
 export const metadata = {
   title: { absolute: "Webleora | Websites, Apps & Software" },
@@ -41,16 +42,16 @@ const quickServices = [
     "/services/custom-software-development",
   ],
   [
-    "fa-chart-simple",
+    "fa-bullhorn",
     "Digital Marketing",
     "Grow your brand with result-driven strategies.",
     "/services",
   ],
   [
-    "fa-cart-shopping",
-    "E-commerce Solutions",
-    "Online stores that present products clearly and take orders.",
-    "/services/e-commerce-solutions",
+    "fa-cloud",
+    "IT Consulting",
+    "Expert guidance for your digital transformation.",
+    "/services",
   ],
 ];
 
@@ -67,103 +68,80 @@ export default function Home() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="wl-home-hero">
+      <section className="wl-dark-hero">
+        <div className="wl-hero-globe-wrap" aria-hidden="true">
+          <svg viewBox="0 0 500 500" width="100%" height="100%">
+            <defs>
+              <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="#2980b9" stopOpacity="0.3" />
+                <stop offset="100%" stopColor="#081423" stopOpacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="250" cy="250" r="230" fill="url(#globeGlow)" stroke="rgba(64,158,255,0.22)" strokeWidth="1.5" />
+            <circle cx="250" cy="250" r="170" fill="none" stroke="rgba(64,158,255,0.13)" strokeWidth="1" />
+            <circle cx="250" cy="250" r="110" fill="none" stroke="rgba(64,158,255,0.1)" strokeWidth="1" />
+            <ellipse cx="250" cy="250" rx="230" ry="110" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
+            <ellipse cx="250" cy="250" rx="110" ry="230" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
+            <line x1="20" y1="250" x2="480" y2="250" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
+            <line x1="250" y1="20" x2="250" y2="480" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
+          </svg>
+        </div>
+
         <div className="container">
-          <div className="wl-home-hero-inner">
-            <div className="wl-home-hero-copy">
-              <span className="wl-kicker">
-                Web, Software &amp; Digital Solutions
+          <div className="wl-dark-hero-inner">
+            <div className="wl-dark-hero-copy">
+              <span className="wl-kicker-gold">
+                Your Trust, Our Commitment
               </span>
 
               <h1>
-                Websites, Web Apps &amp; Business Software{" "}
-                <em>for Growing Companies</em>
+                Building Digital
+                <br />
+                <em>Possibilities Together</em>
               </h1>
 
               <p>
-                Webleora designs and builds websites, web applications, CRMs
-                and online stores that help businesses get more enquiries and
-                run more smoothly.
+                We deliver innovative web, software and digital solutions that
+                help businesses grow, adapt and stay ahead in a digital world.
               </p>
 
-              <div className="wl-home-btns">
-                <Link href="/contact" className="wl-h-btn wl-h-btn-gold">
-                  Start a Project
+              <div className="wl-dark-hero-btns">
+                <Link href="/services" className="wl-btn-gold">
+                  Our Services
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <Link href="/services" className="wl-h-btn wl-h-btn-line">
-                  Explore Our Services
+                <Link href="/contact" className="wl-btn-line-white">
+                  Get in Touch
                 </Link>
               </div>
-
-              <ul className="wl-trust" aria-label="How we work">
-                {trustPoints.map((t) => (
-                  <li key={t}>
-                    <i className="fa-solid fa-check" aria-hidden="true" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
 
         {/* Right side artwork */}
-        <div className="wl-home-hero-art" aria-hidden="true">
-          <div className="wl-home-hero-photo">
+        <div className="wl-dark-hero-art" aria-hidden="true">
+          <div className="wl-dark-hero-photo">
             <img
-              src="/images/hero-image55.jpg"
-              alt="Webleora - Websites, Web Apps & Business Software"
+              src="/images/hero-team-it.jpg"
+              alt="Webleora - Building Digital Possibilities Together"
             />
           </div>
-          <ul className="wl-home-hero-words">
-            {heroWords.map((w) => (
-              <li key={w}>{w}</li>
-            ))}
-          </ul>
-          <Link
-            href="#services"
-            className="wl-home-scroll"
-            aria-label="Scroll down"
-          >
-            <span>Scroll</span>
-            <i className="fa-solid fa-arrow-down" />
-          </Link>
         </div>
       </section>
 
-      {/* ================= QUICK SERVICES ================= */}
-      <section className="wl-svc" id="services">
+      {/* ================= QUICK SERVICES STRIP ================= */}
+      <section className="wl-strip-section" id="services">
         <div className="container">
-          <div className="wl-svc-grid">
-            <div className="wl-svc-label">
-              <h2>
-                <span />
-                Our
-                <br />
-                Services
-              </h2>
-              <Link href="/services" aria-label="All services">
-                <i className="fa-solid fa-arrow-right" />
+          <div className="wl-strip-grid">
+            {quickServices.map(([icon, title, text, href]) => (
+              <Link href={href} className="wl-strip-card" key={title}>
+                <div className="wl-strip-icon">
+                  <i className={`fa-solid ${icon}`} />
+                </div>
+                <h3>{title}</h3>
+                <p>{text}</p>
               </Link>
-            </div>
-
-            <div className="wl-svc-cards">
-              {quickServices.map(([icon, title, text, href]) => (
-                <Link href={href} className="wl-svc-card" key={title}>
-                  <div className="wl-svc-top">
-                    <span className="wl-svc-icon">
-                      <i className={`fa-solid ${icon}`} />
-                    </span>
-                    <span className="wl-svc-go">
-                      <i className="fa-solid fa-arrow-right" />
-                    </span>
-                  </div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </Link>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -171,44 +149,56 @@ export default function Home() {
       {/* ================= ABOUT ================= */}
       <section className="wl-about">
         <div className="container">
-          <div className="wl-about-grid">
-            <div className="wl-about-copy">
-              <span className="wl-kicker wl-kicker-sm">About Webleora</span>
+          <div className="wl-about-row">
+            {/* Left: Office photo */}
+            <div className="wl-about-photo-wrap" aria-hidden="true">
+              <img
+                src="/images/about-office-clear.jpg"
+                alt="Webleora International Headquarters"
+                className="wl-about-reception-img"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="wl-about-content">
+              <span className="wl-kicker-gold">About Webleora</span>
               <h2>
-                A Trusted Partner <em>in Your Digital Journey</em>
+                A Trusted Partner
+                <br />
+                <em>in Your Digital Journey</em>
               </h2>
               <p>
-                Webleora is an IT solutions company
-                focused on practical, reliable and scalable digital solutions. We combine technology, creativity and strategy to
-                help businesses build stronger digital presence and achieve
-                long-term growth.
+                Webleora International is a results-driven IT solutions company
+                focused on delivering innovative, reliable and scalable digital solutions.
+                We combine technology, creativity and strategy to help businesses
+                build stronger digital presence and achieve long-term growth.
               </p>
-              <Link href="/about" className="wl-h-btn wl-h-btn-gold">
+
+              <div className="wl-about-features">
+                {aboutPoints.map(([icon, t, d]) => (
+                  <div className="wl-about-feature-item" key={t}>
+                    <div className="wl-about-feature-icon">
+                      <i className={`fa-solid ${icon}`} />
+                    </div>
+                    <div className="wl-about-feature-text">
+                      <h4>{t}</h4>
+                      <p>{d}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <Link href="/about" className="wl-btn-gold">
                 Know More
                 <i className="fa-solid fa-arrow-right" aria-hidden="true" />
               </Link>
             </div>
-
-            <ul className="wl-about-points">
-              {aboutPoints.map(([icon, t, d]) => (
-                <li key={t}>
-                  <span className="wl-about-icon">
-                    <i className={`fa-solid ${icon}`} />
-                  </span>
-                  <div>
-                    <b>{t}</b>
-                    <small>{d}</small>
-                  </div>
-                </li>
-              ))}
-            </ul>
-
-            <div className="wl-about-photo" aria-hidden="true">
-              <img src="/images/about-image-1.jpg" alt="" />
-            </div>
           </div>
         </div>
       </section>
+
+      {/* ================= WHY YOUR WEBSITE IS YOUR MOST PROFITABLE INVESTMENT ================= */}
+      <WebsiteInvestmentSection />
 
       {/* ================= REST OF PAGE (unchanged) ================= */}
       <div className="our-services">
