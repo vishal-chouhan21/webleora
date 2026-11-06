@@ -48,10 +48,10 @@ const quickServices = [
     "/services",
   ],
   [
-    "fa-cloud",
-    "IT Consulting",
-    "Expert guidance for your digital transformation.",
-    "/services",
+    "fa-cart-shopping",
+    "E-commerce Solutions",
+    "Online stores that present products clearly and take orders.",
+    "/services/e-commerce-solutions",
   ],
 ];
 
@@ -77,54 +77,114 @@ export default function Home() {
                 <stop offset="100%" stopColor="#081423" stopOpacity="0" />
               </radialGradient>
             </defs>
-            <circle cx="250" cy="250" r="230" fill="url(#globeGlow)" stroke="rgba(64,158,255,0.22)" strokeWidth="1.5" />
-            <circle cx="250" cy="250" r="170" fill="none" stroke="rgba(64,158,255,0.13)" strokeWidth="1" />
-            <circle cx="250" cy="250" r="110" fill="none" stroke="rgba(64,158,255,0.1)" strokeWidth="1" />
-            <ellipse cx="250" cy="250" rx="230" ry="110" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
-            <ellipse cx="250" cy="250" rx="110" ry="230" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
-            <line x1="20" y1="250" x2="480" y2="250" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
-            <line x1="250" y1="20" x2="250" y2="480" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
+            <circle
+              cx="250"
+              cy="250"
+              r="230"
+              fill="url(#globeGlow)"
+              stroke="rgba(64,158,255,0.22)"
+              strokeWidth="1.5"
+            />
+            <circle
+              cx="250"
+              cy="250"
+              r="170"
+              fill="none"
+              stroke="rgba(64,158,255,0.13)"
+              strokeWidth="1"
+            />
+            <circle
+              cx="250"
+              cy="250"
+              r="110"
+              fill="none"
+              stroke="rgba(64,158,255,0.1)"
+              strokeWidth="1"
+            />
+            <ellipse
+              cx="250"
+              cy="250"
+              rx="230"
+              ry="110"
+              fill="none"
+              stroke="rgba(64,158,255,0.15)"
+              strokeWidth="1"
+            />
+            <ellipse
+              cx="250"
+              cy="250"
+              rx="110"
+              ry="230"
+              fill="none"
+              stroke="rgba(64,158,255,0.15)"
+              strokeWidth="1"
+            />
+            <line
+              x1="20"
+              y1="250"
+              x2="480"
+              y2="250"
+              stroke="rgba(64,158,255,0.18)"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+            />
+            <line
+              x1="250"
+              y1="20"
+              x2="250"
+              y2="480"
+              stroke="rgba(64,158,255,0.18)"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+            />
           </svg>
         </div>
 
         <div className="container">
-          <div className="wl-dark-hero-inner">
-            <div className="wl-dark-hero-copy">
-              <span className="wl-kicker-gold">
-                Your Trust, Our Commitment
+          <div className="wl-home-hero-inner">
+            <div className="wl-home-hero-copy">
+              <span className="wl-kicker">
+                IT Solutions for a Brighter Tomorrow
               </span>
 
               <h1>
-                Building Digital
+                Ideas Today,
                 <br />
-                <em>Possibilities Together</em>
+                <em>Digital Growth</em> Tomorrow
               </h1>
 
               <p>
-                We deliver innovative web, software and digital solutions that
+                We build innovative web, software and digital solutions that
                 help businesses grow, adapt and stay ahead in a digital world.
               </p>
 
-              <div className="wl-dark-hero-btns">
-                <Link href="/services" className="wl-btn-gold">
+              <div className="wl-home-btns">
+                <Link href="/services" className="wl-h-btn wl-h-btn-gold">
                   Our Services
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <Link href="/contact" className="wl-btn-line-white">
-                  Get in Touch
+                <Link href="/contact" className="wl-h-btn wl-h-btn-line">
+                  Let&apos;s Talk
                 </Link>
               </div>
+
+              <ul className="wl-trust" aria-label="How we work">
+                {trustPoints.map((t) => (
+                  <li key={t}>
+                    <i className="fa-solid fa-check" aria-hidden="true" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
 
         {/* Right side artwork */}
-        <div className="wl-dark-hero-art" aria-hidden="true">
-          <div className="wl-dark-hero-photo">
-            <img
-              src="/images/hero-team-it.jpg"
-              alt="Webleora - Building Digital Possibilities Together"
-            />
+        <div className="wl-home-hero-art" aria-hidden="true">
+          <div className="wl-home-hero-photo">
+            {/* Replace with your office / business photo */}
+            <img src="/images/hero-image55.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -169,26 +229,12 @@ export default function Home() {
               </h2>
               <p>
                 Webleora International is a results-driven IT solutions company
-                focused on delivering innovative, reliable and scalable digital solutions.
-                We combine technology, creativity and strategy to help businesses
-                build stronger digital presence and achieve long-term growth.
+                focused on delivering innovative, reliable and scalable digital
+                solutions. We combine technology, creativity and strategy to
+                help businesses build stronger digital presence and achieve
+                long-term growth.
               </p>
-
-              <div className="wl-about-features">
-                {aboutPoints.map(([icon, t, d]) => (
-                  <div className="wl-about-feature-item" key={t}>
-                    <div className="wl-about-feature-icon">
-                      <i className={`fa-solid ${icon}`} />
-                    </div>
-                    <div className="wl-about-feature-text">
-                      <h4>{t}</h4>
-                      <p>{d}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <Link href="/about" className="wl-btn-gold">
+              <Link href="/about" className="wl-h-btn wl-h-btn-gold">
                 Know More
                 <i className="fa-solid fa-arrow-right" aria-hidden="true" />
               </Link>
