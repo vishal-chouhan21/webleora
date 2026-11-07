@@ -5,9 +5,19 @@ import { cats } from '@/data/content';
 
 
 export const metadata = {
-  title: { absolute: 'Contact Webleora | Start a Project' },
+  title: 'Contact Us | Start Your Project | Webleora International',
   description:
-    'Tell Webleora about your website, app or software project and receive a clear next step.',
+    'Get in touch with Webleora International to discuss your website, mobile app, or custom software project. Receive a free consultation and clear proposal.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact Us | Start Your Project | Webleora International',
+    description:
+      'Get in touch with Webleora International to discuss your website, mobile app, or custom software project. Receive a free consultation and clear proposal.',
+    url: '/contact',
+    type: 'website',
+  },
 };
 
 /* Outline icons (inline so no extra assets are needed) */

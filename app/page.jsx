@@ -8,9 +8,12 @@ import Accordion from "@/components/Accordion";
 import WebsiteInvestmentSection from "@/components/WebsiteInvestmentSection";
 
 export const metadata = {
-  title: { absolute: "Webleora | Websites, Apps & Software" },
+  title: "Webleora | Custom Websites, Web Apps & Business Software Development",
   description:
-    "Webleora designs and develops websites, apps and business software around your goals and workflows. Tell us about your project.",
+    "Webleora International delivers high-performance website development, custom web applications, and enterprise software to help businesses scale and lead digitally.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 const heroWords = ["Websites", "Web Apps", "Software", "E-commerce"];
@@ -285,10 +288,9 @@ export default function Home() {
           <div className="row section-row">
             <div className="col-lg-12">
               <Title sub="our work">Selected Work</Title>
-              <p>
-                Explore examples of digital experiences and business tools we
-                have worked on. These are concept projects that show our
-                approach.
+              <p className="wl-projects-intro">
+                Explore examples of high-performing websites, digital platforms,
+                and custom software we have engineered for our clients.
               </p>
             </div>
           </div>

@@ -4,7 +4,24 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { services, faqs, steps } from '@/data/content';
 export const generateStaticParams = () => services.map((s) => ({ slug: s.slug }));
-export const generateMetadata = async ({ params }) => { const { slug } = await params; const s = services.find((x) => x.slug === slug); return { title: s ? `${s.title} for Your Business` : 'Service', description: s ? `Webleora helps you with ${s.need}. See what is included, how we work and common questions.` : undefined }; };
+export const generateMetadata = async ({ params }) => {
+  const { slug } = await params;
+  const s = services.find((x) => x.slug === slug);
+  if (!s) return { title: 'Service Not Found' };
+  return {
+    title: `${s.title} Services | Webleora International`,
+    description: `Professional ${s.title} solutions for your business. ${s.need}. Engineered for speed, scalability, and high ROI.`,
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
+    openGraph: {
+      title: `${s.title} Services | Webleora International`,
+      description: `Professional ${s.title} solutions for your business. ${s.need}.`,
+      url: `/services/${slug}`,
+      type: 'article',
+    },
+  };
+};
 export default async function Service({ params }) {
   const { slug } = await params;
   const s = services.find((x) => x.slug === slug);

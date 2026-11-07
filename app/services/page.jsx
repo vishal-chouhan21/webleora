@@ -3,9 +3,12 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { cats, catIntro, faqs } from '@/data/content';
 export const metadata = {
-  title: { absolute: 'Webleora Services | Web, Apps & Software' },
+  title: 'Our Services | Web Development, Web Apps & Custom Software',
   description:
-    'Explore Webleora’s services, including websites, web apps, mobile apps, design, custom software and business systems.',
+    'Explore Webleora’s core services: bespoke web design & development, mobile applications, cloud software, CRM/ERP platforms, e-commerce, and maintenance.',
+  alternates: {
+    canonical: '/services',
+  },
 };
 export default function Services() {
   return (<>

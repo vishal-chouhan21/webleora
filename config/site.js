@@ -1,6 +1,7 @@
 // Edit these before launch. Empty values are hidden automatically on the site.
 module.exports = {
   name: 'Webleora',
+  siteUrl: 'https://webleora.com',
   tagline: 'Your Trust, Our Commitment',
   email: 'info@webleora.com',
   phone: '+91 87190 71209',

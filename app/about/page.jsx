@@ -3,9 +3,12 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import { why } from '@/data/content';
 
 export const metadata = {
-  title: { absolute: 'About Webleora | Digital Studio' },
+  title: 'About Us | Webleora International',
   description:
-    'Learn about Webleora’s practical approach to websites, applications, design and business software.',
+    'Discover Webleora International—a results-driven IT solutions and web development company delivering modern digital experiences, custom web apps, and enterprise software.',
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 const guides = [
