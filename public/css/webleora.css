@@ -608,17 +608,10 @@ header.main-header .header-btn .btn-default:hover::before {
 /* ================= DARK HERO SECTION ================= */
 .wl-dark-hero {
   position: relative;
-<<<<<<< HEAD
   background: #081423;
   background: radial-gradient(circle at 35% 45%, #0f2847 0%, #081423 75%);
   color: #fff;
   padding: 56px 0 52px;
-=======
-  padding: 42px 0 52px;
-  background:
-    radial-gradient(700px 380px at 5% 0%, #fff 0%, transparent 70%),
-    var(--wl-bg);
->>>>>>> origin/main
   overflow: hidden;
   z-index: 2;
   min-height: 440px;
@@ -640,7 +633,6 @@ header.main-header .header-btn .btn-default:hover::before {
   position: relative;
   z-index: 3;
 }
-<<<<<<< HEAD
 
 .wl-dark-hero-copy {
   max-width: 530px;
@@ -670,72 +662,13 @@ header.main-header .header-btn .btn-default:hover::before {
   font-size: clamp(2rem, 3.4vw, 2.9rem);
   font-weight: 800;
   line-height: 1.15;
-=======
-.wl-home-hero-copy {
-  max-width: 580px;
-}
-.wl-home-hero-copy h1 {
-  margin: 12px 0 16px;
-  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
-  font-weight: 800;
-  line-height: 1.12;
->>>>>>> origin/main
   letter-spacing: -0.025em;
   color: #ffffff;
 }
 
 .wl-dark-hero-copy h1 em {
   font-style: normal;
-<<<<<<< HEAD
   color: #d8ac66;
-=======
-  color: var(--wl-gold);
-}
-.wl-home-hero-copy p {
-  max-width: 490px;
-  margin: 0 0 20px;
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--wl-muted);
-}
-.wl-home-btns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 22px;
-}
-
-/* trust points under hero buttons */
-.wl-trust {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px 24px;
-  max-width: 500px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.wl-trust li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--wl-ink);
-  line-height: 1.35;
-}
-.wl-trust i {
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
-  color: var(--wl-navy);
-  background: var(--wl-gold-soft);
-  border: 1px solid #e3c898;
-  border-radius: 50%;
->>>>>>> origin/main
 }
 
 .wl-dark-hero-copy p {
@@ -809,27 +742,13 @@ header.main-header .header-btn .btn-default:hover::before {
   top: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
   width: 55%;
-=======
-  width: 52%;
->>>>>>> origin/main
   z-index: 1;
   pointer-events: none;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.85) 24%, #000000 38%);
   mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.85) 24%, #000000 38%);
 }
-<<<<<<< HEAD
 .wl-dark-hero-art::before {
-=======
-.wl-home-hero-photo {
-  position: absolute;
-  inset: 0;
-  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
-}
-.wl-home-hero-photo::before {
-  /* gold edge */
->>>>>>> origin/main
   content: "";
   position: absolute;
   top: 0;
@@ -848,68 +767,9 @@ header.main-header .header-btn .btn-default:hover::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-<<<<<<< HEAD
   object-position: right center;
   display: block;
 }
-=======
-  object-position: 68% 36%;
-  display: block;
-}
-.wl-home-hero-words {
-  position: absolute;
-  top: 24px;
-  right: 28px;
-  z-index: 3;
-  margin: 0;
-  padding: 0 0 12px;
-  list-style: none;
-  font-size: 11px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
-}
-.wl-home-hero-words li {
-  line-height: 1.8;
-}
-.wl-home-hero-words::after {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 2px;
-  margin-top: 8px;
-  background: var(--wl-gold);
-}
-.wl-home-scroll {
-  position: absolute;
-  right: 20px;
-  bottom: 18px;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 10px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.wl-home-scroll span {
-  writing-mode: vertical-rl;
-}
-.wl-home-scroll i {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  font-size: 12px;
-  color: var(--wl-navy);
-  background: var(--wl-gold);
-  border-radius: 50%;
-}
->>>>>>> origin/main
 
 .wl-hero-pillars {
   position: absolute;
@@ -934,14 +794,9 @@ header.main-header .header-btn .btn-default:hover::before {
 .wl-strip-section {
   position: relative;
   z-index: 5;
-<<<<<<< HEAD
   background: #fbfbfd;
   padding: 34px 0 38px;
   border-bottom: 1px solid #eef1f6;
-=======
-  margin-top: 0;
-  padding: 36px 0 60px;
->>>>>>> origin/main
 }
 .wl-strip-grid {
   display: grid;
@@ -1081,13 +936,8 @@ header.main-header .header-btn .btn-default:hover::before {
   }
 }
 @media (max-width: 991px) {
-<<<<<<< HEAD
   .wl-dark-hero {
     padding: 48px 0 36px;
-=======
-  .wl-home-hero {
-    padding: 36px 0 28px;
->>>>>>> origin/main
   }
   .wl-dark-hero-copy {
     max-width: 100%;
@@ -1097,7 +947,6 @@ header.main-header .header-btn .btn-default:hover::before {
     top: 0;
     width: 100%;
     height: 260px;
-<<<<<<< HEAD
     margin-top: 28px;
     border-radius: 12px;
     overflow: hidden;
@@ -1117,16 +966,6 @@ header.main-header .header-btn .btn-default:hover::before {
   .wl-about-photo-wrap {
     min-height: 280px;
     max-height: 360px;
-=======
-    margin: 24px 0 0 auto;
-  }
-  .wl-home-hero-photo {
-    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .wl-svc {
-    margin-top: 0;
-    padding-top: 28px;
->>>>>>> origin/main
   }
 }
 @media (max-width: 767px) {
@@ -1136,16 +975,7 @@ header.main-header .header-btn .btn-default:hover::before {
   }
 }
 @media (max-width: 575px) {
-<<<<<<< HEAD
   .wl-strip-grid {
-=======
-  .wl-trust {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 479px) {
-  .wl-svc-cards {
->>>>>>> origin/main
     grid-template-columns: 1fr;
   }
   .wl-dark-hero-btns {
