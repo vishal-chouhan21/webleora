@@ -1110,7 +1110,8 @@ header.main-header .header-btn .btn-default:hover::before {
 }
 
 .wl-sq-insta {
-  background: #e4405f;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 
 .wl-sq-fb {
