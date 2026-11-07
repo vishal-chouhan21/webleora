@@ -8,11 +8,20 @@ import Accordion from "@/components/Accordion";
 import WebsiteInvestmentSection from "@/components/WebsiteInvestmentSection";
 
 export const metadata = {
-  title: "Webleora | Custom Websites, Web Apps & Business Software Development",
+  title: {
+    absolute: "Webleora | Custom Websites, Web Apps & Business Software Development",
+  },
   description:
     "Webleora International delivers high-performance website development, custom web applications, and enterprise software to help businesses scale and lead digitally.",
   alternates: {
-    canonical: "/",
+    canonical: "https://webleora.com",
+  },
+  openGraph: {
+    title: "Webleora | Custom Websites, Web Apps & Business Software",
+    description:
+      "Webleora designs and develops high-performance websites, web applications, and custom business software tailored to your goals.",
+    url: "https://webleora.com",
+    type: "website",
   },
 };
 

@@ -2,17 +2,19 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { faqs } from '@/data/content';
 export const metadata = {
-  title: 'Frequently Asked Questions (FAQs) | Webleora International',
+  title: {
+    absolute: 'Frequently Asked Questions (FAQs) | Webleora International',
+  },
   description:
     'Find clear answers to common questions about Webleora’s development process, project timelines, deliverables, technology stack, and ongoing maintenance support.',
   alternates: {
-    canonical: '/faqs',
+    canonical: 'https://webleora.com/faqs',
   },
   openGraph: {
     title: 'Frequently Asked Questions (FAQs) | Webleora International',
     description:
       'Find clear answers to common questions about Webleora’s development process, project timelines, deliverables, and support.',
-    url: '/faqs',
+    url: 'https://webleora.com/faqs',
     type: 'website',
   },
 };

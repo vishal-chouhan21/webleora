@@ -3,11 +3,20 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import Accordion from '@/components/Accordion';
 import { cats, catIntro, faqs } from '@/data/content';
 export const metadata = {
-  title: 'Our Services | Web Development, Web Apps & Custom Software',
+  title: {
+    absolute: 'Our Services | Web Development, Apps & Custom Software | Webleora',
+  },
   description:
     'Explore Webleora’s core services: bespoke web design & development, mobile applications, cloud software, CRM/ERP platforms, e-commerce, and maintenance.',
   alternates: {
-    canonical: '/services',
+    canonical: 'https://webleora.com/services',
+  },
+  openGraph: {
+    title: 'Our Services | Web Development, Apps & Custom Software | Webleora',
+    description:
+      'Explore Webleora’s core services: bespoke web design & development, mobile applications, cloud software, CRM/ERP platforms, e-commerce, and maintenance.',
+    url: 'https://webleora.com/services',
+    type: 'website',
   },
 };
 export default function Services() {

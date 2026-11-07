@@ -3,17 +3,19 @@ import { PageHeader, Cta } from '@/components/ui';
 import WebsiteInvestmentSection from '@/components/WebsiteInvestmentSection';
 
 export const metadata = {
-  title: 'Why Your Website is Your Most Profitable Business Investment | Webleora',
+  title: {
+    absolute: 'Why Your Website is Your Most Profitable Business Investment | Webleora',
+  },
   description:
     'Discover how a high-performance website from Webleora acts as a 24/7 revenue engine, builds executive credibility, and delivers compounding business returns.',
   alternates: {
-    canonical: '/why-website',
+    canonical: 'https://webleora.com/why-website',
   },
   openGraph: {
     title: 'Why Your Website is Your Most Profitable Business Investment | Webleora',
     description:
       'Discover how a high-performance website from Webleora acts as a 24/7 revenue engine, builds executive credibility, and delivers compounding business returns.',
-    url: '/why-website',
+    url: 'https://webleora.com/why-website',
     type: 'article',
   },
 };

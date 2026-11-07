@@ -3,11 +3,20 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import { why } from '@/data/content';
 
 export const metadata = {
-  title: 'About Us | Webleora International',
+  title: {
+    absolute: 'About Us | Webleora International',
+  },
   description:
     'Discover Webleora International—a results-driven IT solutions and web development company delivering modern digital experiences, custom web apps, and enterprise software.',
   alternates: {
-    canonical: '/about',
+    canonical: 'https://webleora.com/about',
+  },
+  openGraph: {
+    title: 'About Us | Webleora International',
+    description:
+      'Discover Webleora International—a results-driven IT solutions and web development company delivering modern digital experiences, custom web apps, and enterprise software.',
+    url: 'https://webleora.com/about',
+    type: 'website',
   },
 };
 

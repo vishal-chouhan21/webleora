@@ -3,17 +3,19 @@ import { PageHeader, Title, Cta } from '@/components/ui';
 import { projects } from '@/data/content';
 
 export const metadata = {
-  title: 'Our Work | Featured Projects & Client Case Studies | Webleora',
+  title: {
+    absolute: 'Our Work | Featured Projects & Client Case Studies | Webleora',
+  },
   description:
     'Explore featured projects showing how Webleora builds high-impact websites, web applications, portals, and custom software systems.',
   alternates: {
-    canonical: '/our-work',
+    canonical: 'https://webleora.com/our-work',
   },
   openGraph: {
     title: 'Our Work | Featured Projects & Case Studies | Webleora',
     description:
       'Explore featured projects showing how Webleora builds high-impact websites, web applications, and custom software.',
-    url: '/our-work',
+    url: 'https://webleora.com/our-work',
     type: 'website',
   },
 };

@@ -9,15 +9,17 @@ export const generateMetadata = async ({ params }) => {
   const s = services.find((x) => x.slug === slug);
   if (!s) return { title: 'Service Not Found' };
   return {
-    title: `${s.title} Services | Webleora International`,
+    title: {
+      absolute: `${s.title} Services | Webleora International`,
+    },
     description: `Professional ${s.title} solutions for your business. ${s.need}. Engineered for speed, scalability, and high ROI.`,
     alternates: {
-      canonical: `/services/${slug}`,
+      canonical: `https://webleora.com/services/${slug}`,
     },
     openGraph: {
       title: `${s.title} Services | Webleora International`,
       description: `Professional ${s.title} solutions for your business. ${s.need}.`,
-      url: `/services/${slug}`,
+      url: `https://webleora.com/services/${slug}`,
       type: 'article',
     },
   };
