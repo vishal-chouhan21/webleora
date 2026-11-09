@@ -12,6 +12,12 @@ module.exports = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'webleora.com' }],
+        destination: 'https://www.webleora.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/why-invest-in-a-website',
         destination: '/why-website',
         permanent: true,

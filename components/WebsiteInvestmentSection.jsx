@@ -4,8 +4,8 @@ export const investmentPoints = [
   {
     id: 'authority',
     title: 'Build Instant Authority & Global Trust',
-    stat: '75% of users judge a company’s credibility based on website design alone.',
-    desc: 'A bespoke, polished Webleora platform validates your expertise from the first second, establishing immediate confidence with high-value enterprise clients.',
+    stat: '75% of users judge a company’s credibility based on website design alone. (Source: Stanford Web Credibility Research)',
+    desc: 'A bespoke, polished Webleora platform validates your expertise from the first second, establishing immediate confidence with high-value clients and enterprise buyers.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -17,8 +17,8 @@ export const investmentPoints = [
   {
     id: 'automation',
     title: 'Deploy a 24/7 Automated Sales & Support System',
-    stat: 'Businesses using digital automation see up to 30% higher conversion rates and faster response times.',
-    desc: 'Your website acts as an active sales engine around the clock—capturing qualified leads, answering inquiries, and booking calls even outside business hours.',
+    stat: 'Businesses with automated inquiry capture see up to 30% higher conversion rates. (Source: HubSpot Sales Benchmarks)',
+    desc: 'Your website acts as an active sales engine around the clock—capturing qualified inquiries, answering questions, and scheduling calls even while your team is offline.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
@@ -32,8 +32,8 @@ export const investmentPoints = [
   {
     id: 'seo',
     title: 'Dominate Search Results with an SEO-Ready Storefront',
-    stat: '68% of online experiences begin with a search engine visibility that drives recurring income.',
-    desc: 'Engineered with clean semantic markup, fast Core Web Vitals, and keyword-focused structures to outrank competitors and attract high-intent organic visitors.',
+    stat: '68% of all online experiences begin with a search engine. (Source: BrightEdge SEO Intelligence)',
+    desc: 'Engineered with clean semantic markup, fast Core Web Vitals, and keyword-focused structures to rank higher on Google and bring in qualified, inbound traffic consistently.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -48,8 +48,8 @@ export const investmentPoints = [
   {
     id: 'overhead',
     title: 'Reduce Operational Overheads Efficiently',
-    stat: 'Digital automation can reduce manual administrative costs by up to 40%.',
-    desc: 'Streamline repetitive customer workflows, quote requests, and documentation handling so your core team can focus on closing deals and high-impact work.',
+    stat: 'Digital workflows and self-serve portals reduce administrative overhead by up to 40%. (Source: McKinsey Operations Study)',
+    desc: 'Streamline repetitive customer interactions, quote requests, and documentation handling so your core team can focus on client delivery and high-margin growth.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
@@ -61,8 +61,8 @@ export const investmentPoints = [
   {
     id: 'accessibility',
     title: '24/7 International Market Accessibility',
-    stat: 'Over 5 billion internet users can access your business anytime, worldwide.',
-    desc: 'Break geographic limitations. Serve local clients or international partners seamlessly with multi-device responsiveness, fast CDN delivery, and modern UX.',
+    stat: 'Over 5.4 billion active internet users research solutions online before buying. (Source: DataReportal Global Overview)',
+    desc: 'Break geographic limitations. Serve local clients in Indore and international partners globally with multi-device responsiveness, fast cloud hosting, and frictionless UX.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="5" width="14" height="11" rx="2" />
@@ -75,8 +75,8 @@ export const investmentPoints = [
   {
     id: 'competitive-edge',
     title: 'Competitive Edge in the Digital Age',
-    stat: 'Make your online presence more effective, memorable, and trustworthy than legacy rivals.',
-    desc: 'A modern website is not an expense—it is a compounding business asset that elevates your brand valuation and wins bids against larger competitors.',
+    stat: '81% of B2B and retail shoppers research online before choosing a partner. (Source: Forrester Research)',
+    desc: 'A modern website is not an expense—it is a compounding business asset that elevates your brand valuation, builds buyer trust, and wins contracts over slower competitors.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="8" r="6" />

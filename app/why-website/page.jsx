@@ -9,13 +9,13 @@ export const metadata = {
   description:
     'Discover how a high-performance website from Webleora acts as a 24/7 revenue engine, builds executive credibility, and delivers compounding business returns.',
   alternates: {
-    canonical: 'https://webleora.com/why-website',
+    canonical: './',
   },
   openGraph: {
     title: 'Why Your Website is Your Most Profitable Business Investment | Webleora',
     description:
       'Discover how a high-performance website from Webleora acts as a 24/7 revenue engine, builds executive credibility, and delivers compounding business returns.',
-    url: 'https://webleora.com/why-website',
+    url: './',
     type: 'article',
   },
 };

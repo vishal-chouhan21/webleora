@@ -9,13 +9,13 @@ export const metadata = {
   description:
     'Explore Webleora’s core services: bespoke web design & development, mobile applications, cloud software, CRM/ERP platforms, e-commerce, and maintenance.',
   alternates: {
-    canonical: 'https://webleora.com/services',
+    canonical: './',
   },
   openGraph: {
     title: 'Our Services | Web Development, Apps & Custom Software | Webleora',
     description:
       'Explore Webleora’s core services: bespoke web design & development, mobile applications, cloud software, CRM/ERP platforms, e-commerce, and maintenance.',
-    url: 'https://webleora.com/services',
+    url: './',
     type: 'website',
   },
 };

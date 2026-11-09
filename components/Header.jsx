@@ -28,16 +28,17 @@ export default function Header() {
               <li className="nav-item submenu"><Link className="nav-link" href="/services">Services</Link>
                 <ul>{services.map((s) => <li className="nav-item" key={s.slug}><Link className="nav-link" href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></li>
               <li className="nav-item"><Link className="nav-link" href="/our-work">Our Work</Link></li>
-              <li className="nav-item"><Link className="nav-link" href="/why-website">Why Invest</Link></li>
-              <li className="nav-item"><Link className="nav-link" href="/contact">Contact Us</Link></li>
+              <li className="nav-item"><Link className="nav-link" href="/why-website">Why You Need a Website</Link></li>
+              <li className="nav-item"><Link className="nav-link" href="/blog">Blog</Link></li>
+              <li className="nav-item"><Link className="nav-link" href="/contact">Contact</Link></li>
             </ul></div>
             <div className="header-btn"><Link href="/contact" className="btn-default">Start a Project</Link></div></div>
-          <div className="navbar-toggle"><a href="#" role="button" aria-label="Menu" className={'slicknav_btn ' + (open ? 'slicknav_open' : 'slicknav_collapsed')} onClick={(e) => { e.preventDefault(); setOpen(!open); }}>
-            <span className="slicknav_icon"><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span></span></a></div>
+          <div className="navbar-toggle"><button type="button" aria-label="Toggle Navigation Menu" className={'slicknav_btn ' + (open ? 'slicknav_open' : 'slicknav_collapsed')} onClick={() => setOpen(!open)}>
+            <span className="slicknav_icon"><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span></span></button></div>
         </div></nav>
         <div className="responsive-menu">{open && <div className="slicknav_menu"><ul className="slicknav_nav" onClick={close}>
           <li><Link href="/">Home</Link></li><li><Link href="/about">About Us</Link></li><li><Link href="/services">Services</Link></li>
-          <li><Link href="/our-work">Our Work</Link></li><li><Link href="/why-website">Why Invest</Link></li><li><Link href="/faqs">FAQs</Link></li><li><Link href="/contact">Contact</Link></li></ul></div>}</div>
+          <li><Link href="/our-work">Our Work</Link></li><li><Link href="/why-website">Why You Need a Website</Link></li><li><Link href="/blog">Blog</Link></li><li><Link href="/faqs">FAQs</Link></li><li><Link href="/contact">Contact</Link></li></ul></div>}</div>
       </div>
     </header></>);
 }

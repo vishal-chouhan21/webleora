@@ -5,19 +5,17 @@ import { cats } from '@/data/content';
 
 
 export const metadata = {
-  title: {
-    absolute: 'Contact Us | Start Your Project | Webleora International',
-  },
+  title: 'Contact Us | Start Your Project | Webleora',
   description:
-    'Get in touch with Webleora International to discuss your website, mobile app, or custom software project. Receive a free consultation and clear proposal.',
+    'Get in touch with Webleora to discuss your website, mobile app, or custom software project. Receive a free technical estimate and clear proposal.',
   alternates: {
-    canonical: 'https://webleora.com/contact',
+    canonical: './',
   },
   openGraph: {
-    title: 'Contact Us | Start Your Project | Webleora International',
+    title: 'Contact Us | Start Your Project | Webleora',
     description:
-      'Get in touch with Webleora International to discuss your website, mobile app, or custom software project. Receive a free consultation and clear proposal.',
-    url: 'https://webleora.com/contact',
+      'Get in touch with Webleora to discuss your website, mobile app, or custom software project. Receive a free technical estimate and clear proposal.',
+    url: './',
     type: 'website',
   },
 };
@@ -84,24 +82,39 @@ export default function Contact() {
                 {site.phone && (
                   <a className="wl-info" href={waHref} target="_blank" rel="noopener noreferrer">
                     <span className="wl-info__icon">{Icon.whatsapp}</span>
-                    <h3>WhatsApp</h3>
+                    <h3>WhatsApp Direct</h3>
                     <p>{site.phone}</p>
                   </a>
                 )}
                 {site.location && (
                   <div className="wl-info">
                     <span className="wl-info__icon">{Icon.pin}</span>
-                    <h3>Our Office</h3>
+                    <h3>Office &amp; Workshop</h3>
                     <p>{site.location}</p>
                   </div>
                 )}
               </div>
 
+              {/* Working Hours & Service Area */}
+              <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '18px 22px', margin: '20px 0' }}>
+                <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#0b2239', margin: '0 0 6px' }}>
+                  <i className="fa-regular fa-clock" style={{ color: '#d8ac66', marginRight: '8px' }} aria-hidden="true" />
+                  Business Hours &amp; Consultations
+                </h4>
+                <p style={{ fontSize: '13.5px', color: '#64748b', margin: '0 0 6px' }}>
+                  <strong>Monday – Saturday:</strong> 9:30 AM – 7:30 PM IST (Sunday Closed)
+                </p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>
+                  <strong>Service Radius:</strong> In-person meetings in Indore &amp; MP; virtual consultations for pan-India and international clients across USA, UK &amp; UAE.
+                </p>
+              </div>
+
               {mapSrc && (
-                <div className="wl-map">
+                <div className="wl-map" style={{ minHeight: '260px', borderRadius: '12px', overflow: 'hidden' }}>
                   <iframe
-                    title="Webleora office location"
-                    src={mapSrc}
+                    title="Webleora Office in Indore"
+                    src="https://maps.google.com/maps?q=Gulab+Bagh,+Indore,+Madhya+Pradesh+452010&z=15&output=embed"
+                    style={{ width: '100%', height: '260px', border: 0 }}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />

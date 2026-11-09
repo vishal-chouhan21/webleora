@@ -9,13 +9,13 @@ export const metadata = {
   description:
     'Explore featured projects showing how Webleora builds high-impact websites, web applications, portals, and custom software systems.',
   alternates: {
-    canonical: 'https://webleora.com/our-work',
+    canonical: './',
   },
   openGraph: {
     title: 'Our Work | Featured Projects & Case Studies | Webleora',
     description:
       'Explore featured projects showing how Webleora builds high-impact websites, web applications, and custom software.',
-    url: 'https://webleora.com/our-work',
+    url: './',
     type: 'website',
   },
 };

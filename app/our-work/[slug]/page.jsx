@@ -7,17 +7,15 @@ export const generateMetadata = async ({ params }) => {
   const p = projects.find((x) => x.slug === slug);
   if (!p) return { title: 'Project Not Found' };
   return {
-    title: {
-      absolute: `${p.title} Case Study | Webleora International`,
-    },
+    title: `${p.title} Case Study | Webleora`,
     description: `${p.title}: ${p.challenge} ${p.solution}`,
     alternates: {
-      canonical: `https://webleora.com/our-work/${slug}`,
+      canonical: './',
     },
     openGraph: {
       title: `${p.title} | Webleora Case Study`,
       description: `${p.challenge} ${p.solution}`,
-      url: `https://webleora.com/our-work/${slug}`,
+      url: './',
       type: 'article',
       images: [
         {
@@ -50,26 +48,57 @@ export default async function Project({ params }) {
               </figure>
               <div className="wl-plain">
                 <span className="wl-badge">{p.cat}</span>
-                <h2>The challenge</h2>
+                <h2>The Client Challenge</h2>
                 <p>{p.challenge}</p>
-                <h2>The solution</h2>
+                <h2>The Engineering Solution</h2>
                 <p>{p.solution}</p>
-                <h2>Scope</h2>
+                {p.techStack && (
+                  <>
+                    <h2>Technologies &amp; Architecture</h2>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '24px' }}>
+                      {p.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          style={{
+                            display: 'inline-block',
+                            background: '#0b2239',
+                            color: '#d8ac66',
+                            padding: '6px 14px',
+                            borderRadius: '20px',
+                            fontSize: '13.5px',
+                            fontWeight: '600',
+                          }}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
+                <h2>Project Scope &amp; Deliverables</h2>
                 <ul className="wl-bullets">
                   {p.scope.map((x) => (
                     <li key={x}>{x}</li>
                   ))}
                 </ul>
-                <h2>Outcome</h2>
-                <p>
-                  A robust, scalable solution delivering measurable business impact, enhanced user engagement, and streamlined operations.
+                <h2>Measurable Business Outcome</h2>
+                <p style={{ background: '#f8fafc', borderLeft: '4px solid #d8ac66', padding: '16px 20px', borderRadius: '6px', fontWeight: '500' }}>
+                  {p.outcome}
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="wl-side">
-                <a>Industry: {p.industry}</a>
-                <a>Project type: {p.type}</a>
+                <a><strong>Industry:</strong> {p.industry}</a>
+                <a><strong>Project Type:</strong> {p.type}</a>
+                <a><strong>Location:</strong> India &amp; Global Delivery</a>
+                <div style={{ marginTop: '24px', padding: '20px', background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '12px' }}>
+                  <h4 style={{ fontSize: '17px', color: '#0b2239', marginBottom: '8px', fontWeight: '700' }}>Need a Similar Solution?</h4>
+                  <p style={{ fontSize: '13.5px', color: '#64748b', marginBottom: '16px' }}>Let’s discuss your requirements and provide a free technical estimate.</p>
+                  <a href="/contact" className="btn-default" style={{ display: 'block', textAlign: 'center', padding: '10px 16px', fontSize: '14px' }}>
+                    Request Proposal
+                  </a>
+                </div>
               </div>
             </div>
           </div>
