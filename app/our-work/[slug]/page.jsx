@@ -48,9 +48,9 @@ export default async function Project({ params }) {
               </figure>
               <div className="wl-plain">
                 <span className="wl-badge">{p.cat}</span>
-                <h2>The Client Challenge</h2>
+                <h2>Concept Overview &amp; Use Case</h2>
                 <p>{p.challenge}</p>
-                <h2>The Engineering Solution</h2>
+                <h2>Technical Architecture</h2>
                 <p>{p.solution}</p>
                 {p.techStack && (
                   <>
@@ -81,7 +81,7 @@ export default async function Project({ params }) {
                     <li key={x}>{x}</li>
                   ))}
                 </ul>
-                <h2>Measurable Business Outcome</h2>
+                <h2>Key Technical Capabilities</h2>
                 <p style={{ background: '#f8fafc', borderLeft: '4px solid #d8ac66', padding: '16px 20px', borderRadius: '6px', fontWeight: '500' }}>
                   {p.outcome}
                 </p>

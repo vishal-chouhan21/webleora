@@ -18,33 +18,6 @@ export const metadata = {
   },
 };
 
-const teamMembers = [
-  {
-    name: 'Vishal Singh Chouhan',
-    role: 'Founder & Principal Architect',
-    bio: 'Full-stack software architect specializing in Next.js, Node.js, and high-scale cloud platforms.',
-    img: 'team-1.jpg',
-  },
-  {
-    name: 'Priya Sharma',
-    role: 'Lead UI/UX & Design Systems',
-    bio: 'Digital product designer creating conversion-focused user interfaces and design systems.',
-    img: 'team-2.jpg',
-  },
-  {
-    name: 'Aman Verma',
-    role: 'Senior Full-Stack Engineer',
-    bio: 'Backend & database specialist focusing on PostgreSQL, Python, and microservice APIs.',
-    img: 'team-3.jpg',
-  },
-  {
-    name: 'Neha Joshi',
-    role: 'QA & Technical SEO Lead',
-    bio: 'Quality assurance and Core Web Vitals optimization specialist ensuring zero-defect launches.',
-    img: 'team-4.jpg',
-  },
-];
-
 const guides = [
   ['Clarity', 'We aim to explain requirements, decisions and next steps in straightforward language.'],
   ['Practicality', 'We focus on the features and improvements that serve the project’s real purpose.'],
@@ -196,51 +169,48 @@ export default function About() {
         </div>
       </div>
 
-      {/* ================= MEET OUR TEAM ================= */}
+      {/* ================= OUR CORE COMMITMENTS ================= */}
       <div className="page-section" style={{ background: '#f8fafc', padding: '80px 0' }}>
         <div className="container">
           <div className="row text-center" style={{ marginBottom: '44px' }}>
             <div className="col-lg-12">
-              <span className="wl-badge">Our People</span>
+              <span className="wl-badge">Our Commitment</span>
               <h2 style={{ fontSize: 'clamp(28px, 3.2vw, 38px)', fontWeight: '800', color: '#0b2239', marginTop: '10px' }}>
-                Meet Our Leadership &amp; Engineering Team
+                Engineering Standards You Can Rely On
               </h2>
               <p style={{ color: '#64748b', maxWidth: '640px', margin: '12px auto 0', fontSize: '15.5px' }}>
-                Engineers, architects, and designers based in Indore dedicated to building fast, scalable, and reliable software.
+                Every website, application, and system we deliver is held to strict quality, performance, and transparency standards.
               </p>
             </div>
           </div>
 
           <div className="row">
-            {teamMembers.map((member) => (
-              <div className="col-lg-3 col-md-6 mb-4" key={member.name}>
+            {[
+              ['Clean Architecture', 'Built on modern stacks like Next.js, React, Node.js, and PostgreSQL for maximum speed, security, and long-term maintainability.', 'fa-code'],
+              ['Direct Engineering Collaboration', 'Communicate directly with the technical specialists building your platform—no non-technical middlemen or lost requirements.', 'fa-comments'],
+              ['100% IP & Code Ownership', 'Complete GitHub repository access, Figma design files, and documentation delivered to you with zero vendor lock-in.', 'fa-shield-halved'],
+              ['Milestone-Based Transparency', 'Clear written scopes, guaranteed milestone pricing, and agreed delivery dates before development begins.', 'fa-handshake'],
+            ].map(([title, desc, icon]) => (
+              <div className="col-lg-3 col-md-6 mb-4" key={title}>
                 <div
                   style={{
                     background: '#ffffff',
                     border: '1px solid #e2e8f0',
                     borderRadius: '16px',
-                    overflow: 'hidden',
+                    padding: '30px 24px',
                     height: '100%',
                     boxShadow: '0 4px 16px rgba(11, 34, 57, 0.04)',
-                    transition: 'transform 0.25s ease',
                   }}
                 >
-                  <img
-                    src={`/images/${member.img}`}
-                    alt={`${member.name} - ${member.role} at Webleora`}
-                    style={{ width: '100%', height: '240px', objectFit: 'cover' }}
-                  />
-                  <div style={{ padding: '22px 20px' }}>
-                    <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#0b2239', margin: '0 0 4px' }}>
-                      {member.name}
-                    </h3>
-                    <span style={{ fontSize: '13px', fontWeight: '600', color: '#c58f3f', display: 'block', marginBottom: '10px' }}>
-                      {member.role}
-                    </span>
-                    <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.5', margin: 0 }}>
-                      {member.bio}
-                    </p>
+                  <div style={{ fontSize: '24px', color: '#c58f3f', marginBottom: '16px' }}>
+                    <i className={`fa-solid ${icon}`} />
                   </div>
+                  <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#0b2239', margin: '0 0 8px' }}>
+                    {title}
+                  </h3>
+                  <p style={{ fontSize: '13.5px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>
+                    {desc}
+                  </p>
                 </div>
               </div>
             ))}

@@ -26,9 +26,9 @@ export default function Work() {
       <PageHeader title="Our Work" />
       <div className="page-projects page-section">
         <div className="container">
-          <Title sub="selected work">Featured Projects &amp; Digital Solutions</Title>
-          <p className="wl-projects-intro" style={{ maxWidth: 700, margin: '14px auto 40px', textAlign: 'center' }}>
-            Explore examples of high-performing websites, portals, and custom software engineered for our clients.
+          <Title sub="sample work">Sample Projects &amp; Architecture Concepts</Title>
+          <p className="wl-projects-intro" style={{ maxWidth: 740, margin: '14px auto 40px', textAlign: 'center' }}>
+            Explore sample web platforms, portals, and software architectures built by our engineering team to demonstrate our approach to modern web applications, scalable design, and high-performance websites.
           </p>
           <div className="row">
             {projects.map((p) => (

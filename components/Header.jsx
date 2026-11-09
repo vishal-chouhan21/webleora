@@ -12,11 +12,49 @@ export default function Header() {
   }, []);
   const close = () => setOpen(false);
   return (<>
-    <div className="topbar"><div className="container"><div className="row align-items-center">
-      <div className="col-md-8"><ul className="wl-contact-top">
-        {site.email && <li><i className="fa-regular fa-envelope"></i><a href={`mailto:${site.email}`}>{site.email}</a></li>}
-        {site.phone && <li><i className="fa-solid fa-phone"></i><a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></li>}</ul></div>
-      <div className="col-md-4"><div className="topbar-social-links"><ul>{[['linkedin','fa-linkedin-in'],['instagram','fa-instagram'],['facebook','fa-facebook-f'],['youtube','fa-youtube'],['x','fa-x-twitter']].map(([k,i]) => site.social[k] && <li key={k}><a href={site.social[k]} aria-label={k}><i className={`fa-brands ${i}`}></i></a></li>)}</ul></div></div></div></div></div>
+    <div className="topbar">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-8 col-md-7 col-12 topbar-contact-col">
+            <ul className="wl-contact-top">
+              {site.email && (
+                <li>
+                  <i className="fa-regular fa-envelope" aria-hidden="true" />
+                  <a href={`mailto:${site.email}`}>{site.email}</a>
+                </li>
+              )}
+              {site.phone && (
+                <li>
+                  <i className="fa-solid fa-phone" aria-hidden="true" />
+                  <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>
+                </li>
+              )}
+            </ul>
+          </div>
+          <div className="col-lg-4 col-md-5 d-none d-md-block topbar-social-col">
+            <div className="topbar-social-links">
+              <ul>
+                {[
+                  ['linkedin', 'fa-linkedin-in'],
+                  ['instagram', 'fa-instagram'],
+                  ['facebook', 'fa-facebook-f'],
+                  ['x', 'fa-x-twitter'],
+                ].map(
+                  ([k, i]) =>
+                    site.social[k] && (
+                      <li key={k}>
+                        <a href={site.social[k]} target="_blank" rel="noopener noreferrer" aria-label={k}>
+                          <i className={`fa-brands ${i}`} />
+                        </a>
+                      </li>
+                    )
+                )}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header className="main-header" style={stuck ? { height: 84 } : undefined}>
       <div className={'header-sticky' + (stuck ? ' active' : '')}>
         <nav className="navbar navbar-expand-lg"><div className="container">

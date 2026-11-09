@@ -18,6 +18,5 @@ export default function sitemap() {
 
   return paths.map((path) => ({
     url: `${base}${path}`,
-    lastModified: new Date(),
   }));
 }

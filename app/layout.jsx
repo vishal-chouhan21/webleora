@@ -85,18 +85,10 @@ const jsonLd = {
         { '@type': 'Country', name: 'United Kingdom' },
         { '@type': 'Country', name: 'United Arab Emirates' },
       ],
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '38',
-        bestRating: '5',
-        worstRating: '1',
-      },
       sameAs: [
         'https://www.linkedin.com/company/webleora',
         'https://www.instagram.com/webleora',
         'https://www.facebook.com/webleora',
-        'https://www.youtube.com/@webleora',
         'https://x.com/webleora',
       ],
     },

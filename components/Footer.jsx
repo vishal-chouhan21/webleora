@@ -133,15 +133,6 @@ export default function Footer() {
                   >
                     <i className="fa-brands fa-x-twitter" />
                   </a>
-                  <a
-                    href={site.social.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="wl-social-sq wl-sq-yt"
-                    aria-label="YouTube"
-                  >
-                    <i className="fa-brands fa-youtube" />
-                  </a>
                 </div>
               </div>
             </div>

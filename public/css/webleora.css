@@ -248,6 +248,27 @@
   color: var(--accent-color);
 }
 
+@media (max-width: 767px) {
+  .topbar {
+    padding: 7px 0;
+  }
+  .topbar-contact-col {
+    text-align: center;
+  }
+  .wl-contact-top {
+    justify-content: center;
+    gap: 10px 16px;
+    font-size: 12px;
+  }
+  .wl-contact-top li,
+  .wl-contact-top a {
+    font-size: 12px;
+  }
+  .topbar-social-col {
+    display: none !important;
+  }
+}
+
 .navbar-brand img {
   height: 56px;
   width: auto;
@@ -800,7 +821,7 @@ header.main-header .header-btn .btn-default:hover::before {
 }
 .wl-strip-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 .wl-strip-card {

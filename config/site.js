@@ -14,7 +14,6 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/company/webleora',
     facebook: 'https://www.facebook.com/webleora',
     instagram: 'https://www.instagram.com/webleora',
-    youtube: 'https://www.youtube.com/@webleora',
     x: 'https://x.com/webleora',
   },
   // Shown on the home page. Only keep numbers that are true, or set to [] to hide the box.
