@@ -26,7 +26,7 @@ const base = {
 export const why = [
   [
     'Modern Full-Stack Engineering',
-    'We build with battle-tested modern tech: Next.js, React, Node.js, Python, PostgreSQL, and AWS—engineered for sub-1.5s load times and high PageSpeed performance.',
+    'We build with modern technologies including Next.js, React, Node.js, and PostgreSQL, targeting fast load times and strong Core Web Vitals.',
   ],
   [
     'Milestone-Based Fixed Pricing',
@@ -38,7 +38,7 @@ export const why = [
   ],
   [
     '100% Code & IP Ownership',
-    'Upon completion, you receive full source code, GitHub repository access, design files, and complete intellectual property ownership with zero vendor lock-in.',
+    'Upon completion and final milestone payment, you receive full source code, GitHub repository access, design files, and complete intellectual property ownership with zero vendor lock-in.',
   ],
   [
     'Local Indore Roots, Global Standards',
@@ -77,14 +77,14 @@ export const services = [
   {
     slug: 'website-design-development',
     title: 'Website Design & Development',
-    need: 'We build modern, high-converting business websites that establish credible authority and generate qualified client inquiries.',
+    need: 'We build modern, fast websites that build trust and bring in qualified enquiries.',
     who: 'B2B companies, service providers, startups, and growing enterprises looking for custom, fast-loading websites built on modern stacks.',
     items: cats[0].items,
     affects: base.affects,
     faqs: [
       [
         'Will my website be mobile-friendly and fast?',
-        'Yes. We follow a mobile-first responsive design approach and optimize Core Web Vitals to achieve sub-1.5s load times and 90+ Google PageSpeed scores.',
+        'Yes. We follow a mobile-first responsive design approach, targeting fast load times and strong Core Web Vitals across mobile and desktop devices.',
       ],
       [
         'Can I update text, images, and blogs myself?',
@@ -99,7 +99,7 @@ export const services = [
   {
     slug: 'web-applications',
     title: 'Web Applications & Portals',
-    need: 'We engineer scalable web applications, client portals, and SaaS dashboards built for speed, security, and high user concurrency.',
+    need: 'We build scalable web applications, client portals and SaaS dashboards tailored to your workflows.',
     who: 'Startups, operational teams, and businesses requiring online customer portals, dashboards, or subscription SaaS tools.',
     items: cats[1].items,
     affects: base.affects,
@@ -121,7 +121,7 @@ export const services = [
   {
     slug: 'custom-software-development',
     title: 'Custom Software Development',
-    need: 'We develop tailor-made software solutions designed specifically around your operational workflows and business data.',
+    need: 'We develop tailor-made business software designed around your specific operations and data.',
     who: 'Enterprises and growing businesses with specialized operational workflows that off-the-shelf software cannot adequately handle.',
     items: cats[3].items,
     affects: base.affects,
@@ -139,7 +139,7 @@ export const services = [
   {
     slug: 'crm-erp-admin-panels',
     title: 'CRM, ERP & Admin Panels',
-    need: 'We build centralized business dashboards to manage customer leads, inventory, invoicing, and real-time operations in one place.',
+    need: 'We build centralized dashboards to manage leads, inventory, billing and internal operations in one place.',
     who: 'Business owners, operations directors, and sales managers who want to eliminate chaotic spreadsheets and track business operations in one intuitive dashboard.',
     items: cats[3].items,
     affects: base.affects,
@@ -157,7 +157,7 @@ export const services = [
   {
     slug: 'e-commerce-solutions',
     title: 'E-commerce Solutions',
-    need: 'We create high-performance online storefronts with secure payment processing, inventory tracking, and automated order management.',
+    need: 'We create high-converting online stores with secure checkout, inventory tracking and order management.',
     who: 'DTC brands, wholesalers, and retail merchants looking to scale direct online sales with custom storefronts or headless e-commerce.',
     items: cats[2].items,
     affects: base.affects,
@@ -175,7 +175,7 @@ export const services = [
   {
     slug: 'mobile-app-development',
     title: 'Mobile App Development',
-    need: 'We develop cross-platform iOS and Android mobile apps designed for smooth performance and intuitive user experiences.',
+    need: 'We build cross-platform iOS and Android apps designed for speed, stability and easy use.',
     who: 'Brands, startups, and service companies looking to engage mobile users with reliable, high-performance native and cross-platform apps.',
     items: cats[4].items,
     affects: base.affects,
@@ -193,7 +193,7 @@ export const services = [
   {
     slug: 'digital-marketing-seo',
     title: 'Digital Marketing & SEO',
-    need: 'We provide technical SEO, Google Business Profile optimization, and targeted digital marketing campaigns for growing businesses.',
+    need: 'Local and technical SEO to help your business get found on Google.',
     who: 'Businesses seeking consistent organic Google traffic, higher local search rankings in Indore and regional markets, and qualified inbound leads.',
     items: cats[6].items,
     affects: base.affects,
@@ -211,7 +211,7 @@ export const services = [
   {
     slug: 'it-consulting-cloud',
     title: 'IT Consulting & Cloud Solutions',
-    need: 'We provide strategic technology consulting, cloud infrastructure architecture, and technical roadmap planning.',
+    need: 'We provide strategic IT consulting, cloud infrastructure setup and technical roadmap planning.',
     who: 'Founders, CTOs, and business leaders seeking expert guidance on architecture, cloud migrations, tech stack selection, and software scalability.',
     items: cats[8].items,
     affects: base.affects,
@@ -229,7 +229,7 @@ export const services = [
   {
     slug: 'website-maintenance-improvements',
     title: 'Website Maintenance & Speed Optimization',
-    need: 'We deliver dependable technical maintenance, security monitoring, speed tuning, and ongoing software support.',
+    need: 'We deliver reliable technical maintenance, security monitoring, speed tuning and ongoing software support.',
     who: 'Businesses that require dependable, on-demand software engineers to keep their digital infrastructure fast, secure, and always up to date.',
     items: cats[8].items,
     affects: base.affects,

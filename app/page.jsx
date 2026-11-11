@@ -11,14 +11,14 @@ export const metadata = {
     absolute: "Webleora | Custom Websites, Web Apps & Business Software in Indore",
   },
   description:
-    "Webleora is a web development and custom software engineering firm based in Indore, India. We build high-speed websites, web apps, and enterprise software for businesses worldwide.",
+    "Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.",
   alternates: {
     canonical: "./",
   },
   openGraph: {
     title: "Webleora | Custom Websites, Web Apps & Business Software",
     description:
-      "Webleora designs and develops high-performance websites, web applications, and custom business software tailored to your goals.",
+      "Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.",
     url: "./",
     type: "website",
   },
@@ -26,9 +26,9 @@ export const metadata = {
 
 const trustPoints = [
   "Indore, MP Office · Global Delivery",
-  "Milestone-Based Fixed Pricing",
-  "100% Full Source Code Ownership",
-  "Optimized for Sub-1.5s Core Web Vitals",
+  "Milestone-Based Transparent Pricing",
+  "Full Source Code Ownership on Delivery",
+  "We target fast load times and strong Core Web Vitals",
 ];
 
 const quickServices = [
@@ -203,7 +203,7 @@ export default function Home() {
 
               <div style={{ marginTop: '24px', display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <Link href="/about" className="wl-btn-gold">
-                  About Us &amp; Our Process
+                  About Webleora
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
                 <Link href="/contact" className="wl-invest-secondary-link">

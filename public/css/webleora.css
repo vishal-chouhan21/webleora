@@ -1261,14 +1261,23 @@ header.main-header .header-btn .btn-default:hover::before {
   transition: color 0.25s ease !important;
 }
 
-.service-item .service-btn a {
+.service-item .service-btn a,
+.service-item .service-btn span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
   background: #f4f6f9 !important;
   color: #0b2239 !important;
   transition: all 0.25s ease !important;
 }
 
 .service-item:hover .service-btn a,
-.service-item.active .service-btn a {
+.service-item.active .service-btn a,
+.service-item:hover .service-btn span,
+.service-item.active .service-btn span {
   background: linear-gradient(135deg, #d8ac66, #c58f3f) !important;
   color: #081423 !important;
   box-shadow: 0 4px 12px rgba(197, 143, 63, 0.35) !important;
