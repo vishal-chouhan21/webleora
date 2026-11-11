@@ -629,25 +629,59 @@ header.main-header .header-btn .btn-default:hover::before {
 /* ================= DARK HERO SECTION ================= */
 .wl-dark-hero {
   position: relative;
-  background: #081423;
-  background: radial-gradient(circle at 35% 45%, #0f2847 0%, #081423 75%);
+  background-color: #081423;
+  background-image: 
+    linear-gradient(90deg, rgba(8, 20, 35, 0.96) 0%, rgba(8, 20, 35, 0.90) 44%, rgba(8, 20, 35, 0.52) 75%, rgba(8, 20, 35, 0.22) 100%),
+    url('/images/hero-team-it.jpg');
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
-  padding: 56px 0 52px;
+  padding: 84px 0 80px;
   overflow: hidden;
   z-index: 2;
-  min-height: 440px;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
 }
 
-.wl-hero-globe-wrap {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  width: 520px;
-  height: 520px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.7;
+.wl-kicker-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d8ac66;
+  margin-bottom: 14px;
+}
+.wl-kicker-gold::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #d8ac66;
+}
+
+.wl-hero-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #e65100 0%, #ff6d00 100%);
+  border: 1px solid rgba(255, 183, 77, 0.45);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 16px rgba(230, 81, 0, 0.35);
+}
+
+.wl-hero-ai-badge i {
+  color: #ffe0b2;
+  font-size: 15px;
 }
 
 .wl-dark-hero-inner {
@@ -656,26 +690,7 @@ header.main-header .header-btn .btn-default:hover::before {
 }
 
 .wl-dark-hero-copy {
-  max-width: 530px;
-}
-
-.wl-kicker-gold {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #d8ac66;
-  margin-bottom: 14px;
-}
-.wl-kicker-gold::before {
-  content: "";
-  display: inline-block;
-  width: 26px;
-  height: 2px;
-  background: #d8ac66;
+  max-width: 580px;
 }
 
 .wl-dark-hero-copy h1 {
@@ -693,11 +708,11 @@ header.main-header .header-btn .btn-default:hover::before {
 }
 
 .wl-dark-hero-copy p {
-  max-width: 480px;
-  margin: 0 0 26px;
+  max-width: 520px;
+  margin: 0 0 20px;
   font-size: 15px;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .wl-dark-hero-btns {
@@ -958,24 +973,19 @@ header.main-header .header-btn .btn-default:hover::before {
 }
 @media (max-width: 991px) {
   .wl-dark-hero {
-    padding: 48px 0 36px;
+    background-image: 
+      linear-gradient(to bottom, rgba(8, 20, 35, 0.95) 0%, rgba(8, 20, 35, 0.90) 65%, rgba(8, 20, 35, 0.82) 100%),
+      url('/images/hero-team-it.jpg');
+    background-position: center center;
+    padding: 56px 0 48px;
+    min-height: auto;
   }
   .wl-dark-hero-copy {
     max-width: 100%;
   }
-  .wl-dark-hero-art {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 260px;
-    margin-top: 28px;
-    border-radius: 12px;
-    overflow: hidden;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-  .wl-hero-globe-wrap {
-    display: none;
+  .wl-hero-ai-badge {
+    font-size: 12.5px;
+    padding: 6px 12px;
   }
   .wl-strip-grid {
     grid-template-columns: repeat(2, 1fr);

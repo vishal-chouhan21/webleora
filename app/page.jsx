@@ -87,31 +87,13 @@ export default function Home() {
 
   return (
     <>
-      {/* ================= HERO ================= */}
+      {/* ================= HERO (BACKGROUND IMAGE & SLEEK GRADIENT OVERLAY) ================= */}
       <section className="wl-dark-hero">
-        <div className="wl-hero-globe-wrap" aria-hidden="true">
-          <svg viewBox="0 0 500 500" width="100%" height="100%">
-            <defs>
-              <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#2980b9" stopOpacity="0.3" />
-                <stop offset="100%" stopColor="#081423" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <circle cx="250" cy="250" r="230" fill="url(#globeGlow)" stroke="rgba(64,158,255,0.22)" strokeWidth="1.5" />
-            <circle cx="250" cy="250" r="170" fill="none" stroke="rgba(64,158,255,0.13)" strokeWidth="1" />
-            <circle cx="250" cy="250" r="110" fill="none" stroke="rgba(64,158,255,0.1)" strokeWidth="1" />
-            <ellipse cx="250" cy="250" rx="230" ry="110" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
-            <ellipse cx="250" cy="250" rx="110" ry="230" fill="none" stroke="rgba(64,158,255,0.15)" strokeWidth="1" />
-            <line x1="20" y1="250" x2="480" y2="250" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
-            <line x1="250" y1="20" x2="250" y2="480" stroke="rgba(64,158,255,0.18)" strokeWidth="1" strokeDasharray="4 4" />
-          </svg>
-        </div>
-
         <div className="container">
           <div className="wl-dark-hero-inner">
             <div className="wl-dark-hero-copy">
               <span className="wl-kicker-gold">
-                Top Web Development &amp; Software Company in Indore
+                Custom Web Development &amp; Software in Indore
               </span>
 
               <h1>
@@ -121,16 +103,21 @@ export default function Home() {
               </h1>
 
               <p>
-                Based in Indore, Madhya Pradesh, Webleora builds high-speed websites, scalable web applications, and custom business software. We help growing companies convert visitors, automate operations, and scale digitally.
+                Based in Indore, Madhya Pradesh, Webleora builds high-speed websites, scalable web applications, and custom business software that help growing companies convert visitors and streamline operations.
               </p>
+
+              <div className="wl-hero-ai-badge">
+                <i className="fa-solid fa-microchip" aria-hidden="true" />
+                <span>Modern Full-Stack Engineering &amp; AI-Enabled Workflows</span>
+              </div>
 
               <div className="wl-dark-hero-btns">
                 <Link href="/contact" className="wl-btn-gold">
-                  Book Free 15-Min Discovery Call
+                  Get a Free Quote
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <Link href="/services" className="wl-btn-line-white">
-                  Explore Services
+                <Link href="/our-work" className="wl-btn-line-white">
+                  View Our Portfolio
                 </Link>
               </div>
 
@@ -154,16 +141,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Right side artwork */}
-        <div className="wl-dark-hero-art" aria-hidden="true">
-          <div className="wl-dark-hero-photo">
-            <img
-              src="/images/hero-team-it.jpg"
-              alt="Webleora engineering team collaborating on custom software development in Indore"
-            />
           </div>
         </div>
       </section>

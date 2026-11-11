@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="wl-footer-banner-inner">
             <div className="wl-footer-banner-left">
               <h3 className="wl-footer-banner-title">
-                WEBLEORA <span>· Top Web Development &amp; Software Company in Indore</span>
+                WEBLEORA <span>· Web Development &amp; Software Company in Indore</span>
               </h3>
               <p className="wl-footer-banner-address">
                 <i className="fa-solid fa-location-dot" style={{ marginRight: 6, color: '#d8ac66' }} aria-hidden="true" />

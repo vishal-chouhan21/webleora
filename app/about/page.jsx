@@ -186,10 +186,10 @@ export default function About() {
 
           <div className="row">
             {[
-              ['Clean Architecture', 'Built on modern stacks like Next.js, React, Node.js, and PostgreSQL for maximum speed, security, and long-term maintainability.', 'fa-code'],
-              ['Direct Engineering Collaboration', 'Communicate directly with the technical specialists building your platform—no non-technical middlemen or lost requirements.', 'fa-comments'],
-              ['100% IP & Code Ownership', 'Complete GitHub repository access, Figma design files, and documentation delivered to you with zero vendor lock-in.', 'fa-shield-halved'],
-              ['Milestone-Based Transparency', 'Clear written scopes, guaranteed milestone pricing, and agreed delivery dates before development begins.', 'fa-handshake'],
+              ['Clean Architecture', 'Built on modern stacks like Next.js, React, Node.js, and PostgreSQL for speed, security, and long-term maintainability.', 'fa-code'],
+              ['Direct Technical Collaboration', 'Work directly with the technical specialists building and managing your project for clear communication at every stage.', 'fa-comments'],
+              ['Clear Code Ownership', 'Deliverables include your project’s complete source code, design assets, and documentation with no vendor lock-in.', 'fa-shield-halved'],
+              ['Milestone-Based Scopes', 'Structured deliverables, clear milestones, and agreed timelines before work begins.', 'fa-handshake'],
             ].map(([title, desc, icon]) => (
               <div className="col-lg-3 col-md-6 mb-4" key={title}>
                 <div
