@@ -9,14 +9,14 @@ export const metadata = {
   metadataBase: new URL(baseUrl),
   title: 'Webleora | Custom Websites, Web Apps & Business Software Development',
   description:
-    'Webleora designs and develops high-performance websites, web applications, and custom business software tailored to your goals.',
+    'Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.',
   alternates: {
     canonical: './',
   },
   openGraph: {
     title: 'Webleora | Custom Websites, Web Apps & Business Software',
     description:
-      'Webleora designs and develops high-performance websites, web applications, and custom business software tailored to your goals.',
+      'Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.',
     url: './',
     siteName: 'Webleora',
     type: 'website',
@@ -26,7 +26,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Webleora | Websites, Apps & Business Software',
     description:
-      'Webleora designs and develops custom websites, web apps and software solutions for growing businesses.',
+      'Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.',
     images: ['/images/hero-team-it.jpg'],
   },
   robots: {
@@ -52,7 +52,7 @@ const jsonLd = {
       logo: `${baseUrl}/images/logo.png`,
       image: `${baseUrl}/images/hero-team-it.jpg`,
       description:
-        'Webleora is a web development and custom software company based in Indore, India. We engineer bespoke websites, SaaS web applications, CRM/ERP systems, and e-commerce platforms.',
+        'Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.',
       telephone: site.phone || '+91 87190 71209',
       email: site.email || 'info@webleora.com',
       priceRange: '₹₹ / $$',

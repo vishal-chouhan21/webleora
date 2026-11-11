@@ -393,6 +393,14 @@
      [
       "p",
       "The specific written agreement for a project will govern that engagement."
+     ],
+     [
+      "p",
+      "Standard development engagements include a 30-day post-launch technical warranty covering defect remediation and adjustments within the agreed project scope."
+     ],
+     [
+      "p",
+      "Project proposals define milestone-based delivery schedules and transparent fixed pricing agreed in writing before engineering begins."
      ]
     ]
    },
@@ -450,6 +458,10 @@
      [
       "p",
       "Ownership and permitted use of client project deliverables will be determined by the applicable written project agreement."
+     ],
+     [
+      "p",
+      "Upon full payment of final project milestones, complete source code, repository access, and intellectual property for custom project deliverables are transferred to the client."
      ]
     ]
    },

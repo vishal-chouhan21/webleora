@@ -7,13 +7,13 @@ export const generateMetadata = async ({ params }) => {
   const p = projects.find((x) => x.slug === slug);
   if (!p) return { title: 'Project Not Found' };
   return {
-    title: `${p.title} Sample Project | Webleora`,
+    title: `Sample Project: ${p.title} | Webleora`,
     description: `${p.title}: ${p.challenge} ${p.solution}`,
     alternates: {
       canonical: './',
     },
     openGraph: {
-      title: `${p.title} | Webleora Sample Project`,
+      title: `Sample Project: ${p.title} | Webleora`,
       description: `${p.challenge} ${p.solution}`,
       url: './',
       type: 'article',
@@ -22,7 +22,7 @@ export const generateMetadata = async ({ params }) => {
           url: `/images/${p.img}`,
           width: 1200,
           height: 630,
-          alt: p.title,
+          alt: `Sample Project: ${p.title}`,
         },
       ],
     },
@@ -34,7 +34,7 @@ export default async function Project({ params }) {
   if (!p) notFound();
   return (
     <>
-      <PageHeader title={p.title} crumbs={[['our work', '/our-work']]} />
+      <PageHeader title={`Sample Project: ${p.title}`} crumbs={[['our work', '/our-work']]} />
       <div className="page-section">
         <div className="container">
           <div className="row">
@@ -42,7 +42,7 @@ export default async function Project({ params }) {
               <figure className="image-anime">
                 <img
                   src={`/images/${p.img}`}
-                  alt={p.title}
+                  alt={`Sample Project: ${p.title}`}
                   style={{ width: '100%', borderRadius: 20 }}
                 />
               </figure>

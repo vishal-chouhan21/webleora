@@ -37,7 +37,7 @@ export default function Work() {
                   <div className="project-image">
                     <Link href={`/our-work/${p.slug}`}>
                       <figure className="image-anime">
-                        <img src={`/images/${p.img}`} alt={p.title} />
+                        <img src={`/images/${p.img}`} alt={`Sample Project: ${p.title}`} />
                       </figure>
                     </Link>
                   </div>
@@ -46,7 +46,7 @@ export default function Work() {
                       <Link href={`/our-work/${p.slug}`}>{p.cat}</Link>
                     </p>
                     <h3>
-                      <Link href={`/our-work/${p.slug}`}>{p.title}</Link>
+                      <Link href={`/our-work/${p.slug}`}>Sample Project: {p.title}</Link>
                     </h3>
                   </div>
                 </div>
