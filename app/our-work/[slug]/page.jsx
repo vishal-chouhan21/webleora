@@ -7,13 +7,13 @@ export const generateMetadata = async ({ params }) => {
   const p = projects.find((x) => x.slug === slug);
   if (!p) return { title: 'Project Not Found' };
   return {
-    title: `${p.title} Case Study | Webleora`,
+    title: `${p.title} Sample Project | Webleora`,
     description: `${p.title}: ${p.challenge} ${p.solution}`,
     alternates: {
       canonical: './',
     },
     openGraph: {
-      title: `${p.title} | Webleora Case Study`,
+      title: `${p.title} | Webleora Sample Project`,
       description: `${p.challenge} ${p.solution}`,
       url: './',
       type: 'article',

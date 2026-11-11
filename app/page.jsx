@@ -11,7 +11,7 @@ export const metadata = {
     absolute: "Webleora | Custom Websites, Web Apps & Business Software in Indore",
   },
   description:
-    "Webleora is a top web development and custom software engineering firm based in Indore, India. We build high-speed websites, web apps, and enterprise software for businesses worldwide.",
+    "Webleora is a web development and custom software engineering firm based in Indore, India. We build high-speed websites, web apps, and enterprise software for businesses worldwide.",
   alternates: {
     canonical: "./",
   },
@@ -28,7 +28,7 @@ const trustPoints = [
   "Indore, MP Office · Global Delivery",
   "Milestone-Based Fixed Pricing",
   "100% Full Source Code Ownership",
-  "Sub-1.5s Core Web Vitals Guarantee",
+  "Optimized for Sub-1.5s Core Web Vitals",
 ];
 
 const quickServices = [
@@ -72,7 +72,7 @@ const quickServices = [
 
 const aboutPoints = [
   ["fa-code-branch", "Modern Full-Stack", "Built with Next.js, React, Node.js, Python, and PostgreSQL."],
-  ["fa-handshake", "Milestone Pricing", "Guaranteed fixed scope and delivery timelines with zero surprises."],
+  ["fa-handshake", "Milestone Pricing", "Clear milestone scope and delivery timelines with zero surprises."],
   ["fa-user-check", "Direct Senior Access", "Communicate directly with senior engineers and architects."],
   ["fa-shield-halved", "100% IP Ownership", "Complete source code, design files, and repository ownership."],
 ];
@@ -203,7 +203,7 @@ export default function Home() {
 
               <div style={{ marginTop: '24px', display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <Link href="/about" className="wl-btn-gold">
-                  Meet Our Team &amp; Process
+                  About Us &amp; Our Process
                   <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
                 <Link href="/contact" className="wl-invest-secondary-link">
@@ -303,7 +303,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ================= SELECTED WORK (CASE STUDIES) ================= */}
+      {/* ================= SELECTED WORK (SAMPLE PROJECTS) ================= */}
       <div className="our-projects">
         <div className="container">
           <div className="row section-row">

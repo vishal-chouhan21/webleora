@@ -31,7 +31,7 @@ export const investmentPoints = [
   },
   {
     id: 'seo',
-    title: 'Dominate Search Results with an SEO-Ready Storefront',
+    title: 'Increase Search Visibility with an SEO-Ready Platform',
     stat: '68% of all online experiences begin with a search engine. (Source: BrightEdge SEO Intelligence)',
     desc: 'Engineered with clean semantic markup, fast Core Web Vitals, and keyword-focused structures to rank higher on Google and bring in qualified, inbound traffic consistently.',
     icon: (

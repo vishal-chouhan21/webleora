@@ -52,7 +52,7 @@ const jsonLd = {
       logo: `${baseUrl}/images/logo.png`,
       image: `${baseUrl}/images/hero-team-it.jpg`,
       description:
-        'Webleora is a top-rated web development and custom software company based in Indore, India. We engineer bespoke websites, SaaS web applications, CRM/ERP systems, and e-commerce platforms.',
+        'Webleora is a web development and custom software company based in Indore, India. We engineer bespoke websites, SaaS web applications, CRM/ERP systems, and e-commerce platforms.',
       telephone: site.phone || '+91 87190 71209',
       email: site.email || 'info@webleora.com',
       priceRange: '₹₹ / $$',

@@ -4,17 +4,17 @@ import { projects } from '@/data/content';
 
 export const metadata = {
   title: {
-    absolute: 'Our Work | Featured Projects & Client Case Studies | Webleora',
+    absolute: 'Our Work | Sample Projects & Architecture Concepts | Webleora',
   },
   description:
-    'Explore featured projects showing how Webleora builds high-impact websites, web applications, portals, and custom software systems.',
+    'Explore sample projects showing how Webleora builds high-impact websites, web applications, portals, and custom software systems.',
   alternates: {
     canonical: './',
   },
   openGraph: {
-    title: 'Our Work | Featured Projects & Case Studies | Webleora',
+    title: 'Our Work | Sample Projects & Architecture Concepts | Webleora',
     description:
-      'Explore featured projects showing how Webleora builds high-impact websites, web applications, and custom software.',
+      'Explore sample projects showing how Webleora builds high-impact websites, web applications, and custom software.',
     url: './',
     type: 'website',
   },
