@@ -30,11 +30,12 @@ export default function Footer() {
               <h3>Quick Links</h3>
               <ul>
                 <li><Link href="/">Home</Link></li>
+                <li><Link href="/portfolio">Portfolio</Link></li>
+                <li><Link href="/portfolio/website-design">Web Design Portfolio</Link></li>
+                <li><Link href="/portfolio/mobile-app">Mobile App Portfolio</Link></li>
+                <li><Link href="/portfolio/graphic-design">Graphic Design Portfolio</Link></li>
                 <li><Link href="/services">Services</Link></li>
                 <li><Link href="/about">About Us</Link></li>
-                <li><Link href="/our-work">Our Work</Link></li>
-                <li><Link href="/why-website">Why You Need a Website</Link></li>
-                <li><Link href="/blog">Blog &amp; Resources</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
@@ -84,14 +85,14 @@ export default function Footer() {
                 Mon – Sat: 9:30 AM – 7:30 PM IST · Serving Indore, Pan-India &amp; International Clients
               </p>
               <div className="wl-footer-banner-contact">
-                <a href="tel:+918719071209" className="wl-footer-contact-item">
+                <a href={`tel:${(site.phone || '+91 95891 36915').replace(/\s/g, '')}`} className="wl-footer-contact-item">
                   <i className="fa-solid fa-phone" aria-hidden="true" />
-                  <span>+91 87190 71209</span>
+                  <span>{site.phone || '+91 95891 36915'}</span>
                 </a>
                 <span className="wl-footer-contact-sep">,</span>
-                <a href="mailto:info@webleora.com" className="wl-footer-contact-item">
+                <a href={`mailto:${site.email || 'info@webleora.com'}`} className="wl-footer-contact-item">
                   <i className="fa-solid fa-envelope" aria-hidden="true" />
-                  <span>info@webleora.com</span>
+                  <span>{site.email || 'info@webleora.com'}</span>
                 </a>
               </div>
               <div className="wl-footer-banner-social">
@@ -125,9 +126,9 @@ export default function Footer() {
                     <i className="fa-brands fa-facebook-f" />
                   </a>
                   <a
-                    href={site.social.x}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={site.social.x || '#'}
+                    target={site.social.x && site.social.x !== '#' ? '_blank' : undefined}
+                    rel={site.social.x && site.social.x !== '#' ? 'noopener noreferrer' : undefined}
                     className="wl-social-sq wl-sq-x"
                     aria-label="X (Twitter)"
                   >

@@ -53,7 +53,7 @@ const jsonLd = {
       image: `${baseUrl}/images/hero-team-it.jpg`,
       description:
         'Webleora is a web development and custom software company in Indore, India. We build fast websites, web apps, mobile apps and business software for growing companies.',
-      telephone: site.phone || '+91 87190 71209',
+      telephone: site.phone || '+91 95891 36915',
       email: site.email || 'info@webleora.com',
       priceRange: '₹₹ / $$',
       address: {
@@ -86,11 +86,11 @@ const jsonLd = {
         { '@type': 'Country', name: 'United Arab Emirates' },
       ],
       sameAs: [
-        'https://www.linkedin.com/company/webleora',
-        'https://www.instagram.com/webleora',
-        'https://www.facebook.com/webleora',
-        'https://x.com/webleora',
-      ],
+        site.social.linkedin,
+        site.social.instagram,
+        site.social.facebook,
+        site.social.x && site.social.x !== '#' ? site.social.x : null,
+      ].filter(Boolean),
     },
     {
       '@type': 'WebSite',

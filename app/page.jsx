@@ -241,7 +241,7 @@ export default function Home() {
       </div>
 
       {/* ================= HOW WE WORK (5-STEP PROCESS) ================= */}
-      <div className="page-section">
+      <div className="page-section wl-process-section">
         <div className="container">
           <div className="row section-row">
             <div className="col-lg-12">
@@ -253,7 +253,7 @@ export default function Home() {
               const [n, name] = t.split(" — ");
               return (
                 <div className="wl-step" key={t}>
-                  <span>{n}</span>
+                  <div className="wl-step-badge">{n}</div>
                   <h3>{name}</h3>
                   <p>{d}</p>
                 </div>

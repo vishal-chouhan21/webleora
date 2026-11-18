@@ -43,7 +43,12 @@ export default function Header() {
                   ([k, i]) =>
                     site.social[k] && (
                       <li key={k}>
-                        <a href={site.social[k]} target="_blank" rel="noopener noreferrer" aria-label={k}>
+                        <a
+                          href={site.social[k]}
+                          target={site.social[k] !== '#' ? '_blank' : undefined}
+                          rel={site.social[k] !== '#' ? 'noopener noreferrer' : undefined}
+                          aria-label={k}
+                        >
                           <i className={`fa-brands ${i}`} />
                         </a>
                       </li>
@@ -65,7 +70,12 @@ export default function Header() {
               <li className="nav-item"><Link className="nav-link" href="/about">About Us</Link></li>
               <li className="nav-item submenu"><Link className="nav-link" href="/services">Services</Link>
                 <ul>{services.map((s) => <li className="nav-item" key={s.slug}><Link className="nav-link" href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></li>
-              <li className="nav-item"><Link className="nav-link" href="/our-work">Our Work</Link></li>
+              <li className="nav-item submenu"><Link className="nav-link" href="/portfolio">Portfolio</Link>
+                <ul>
+                  <li className="nav-item"><Link className="nav-link" href="/portfolio/website-design">Website Design Portfolio</Link></li>
+                  <li className="nav-item"><Link className="nav-link" href="/portfolio/mobile-app">Mobile App Portfolio</Link></li>
+                  <li className="nav-item"><Link className="nav-link" href="/portfolio/graphic-design">Graphic Design Portfolio</Link></li>
+                </ul></li>
               <li className="nav-item"><Link className="nav-link" href="/why-website">Why You Need a Website</Link></li>
               <li className="nav-item"><Link className="nav-link" href="/blog">Blog</Link></li>
               <li className="nav-item"><Link className="nav-link" href="/contact">Contact</Link></li>
@@ -76,7 +86,11 @@ export default function Header() {
         </div></nav>
         <div className="responsive-menu">{open && <div className="slicknav_menu"><ul className="slicknav_nav" onClick={close}>
           <li><Link href="/">Home</Link></li><li><Link href="/about">About Us</Link></li><li><Link href="/services">Services</Link></li>
-          <li><Link href="/our-work">Our Work</Link></li><li><Link href="/why-website">Why You Need a Website</Link></li><li><Link href="/blog">Blog</Link></li><li><Link href="/faqs">FAQs</Link></li><li><Link href="/contact">Contact</Link></li></ul></div>}</div>
+          <li><Link href="/portfolio">Portfolio</Link></li>
+          <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/website-design">• Website Design Portfolio</Link></li>
+          <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/mobile-app">• Mobile App Portfolio</Link></li>
+          <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/graphic-design">• Graphic Design Portfolio</Link></li>
+          <li><Link href="/why-website">Why You Need a Website</Link></li><li><Link href="/blog">Blog</Link></li><li><Link href="/faqs">FAQs</Link></li><li><Link href="/contact">Contact</Link></li></ul></div>}</div>
       </div>
     </header></>);
 }

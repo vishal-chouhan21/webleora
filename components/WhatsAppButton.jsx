@@ -1,7 +1,9 @@
 'use client';
 
+import site from '@/config/site';
+
 export default function WhatsAppButton() {
-  const phoneNumber = '918719071209';
+  const phoneNumber = site.phone ? site.phone.replace(/\D/g, '') : '919589136915';
   const message = encodeURIComponent(
     'Hello Webleora, I would like to inquire about your website and digital solutions.'
   );

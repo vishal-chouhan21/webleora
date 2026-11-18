@@ -10,7 +10,13 @@ export function ServiceCards({ items }) {
           <div className="icon-box"><img src={`/images/icon-service-${(i % 6) + 1}.svg`} alt={`${s.title} Icon`} width="48" height="48" /></div>
           <div className="service-title-box">
             <div className="service-title"><h3><Link href={`/services/${s.slug}`}>{s.title}</Link></h3></div>
-            <div className="service-btn"><span className="service-btn-icon" aria-hidden="true"><i className="fa-solid fa-arrow-right"></i></span></div>
+            <div className="service-btn">
+              <Link href={`/services/${s.slug}`} className="service-btn-link" aria-label={`Learn more about ${s.title}`}>
+                <span className="service-btn-icon" aria-hidden="true">
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="service-content"><p>{s.text || s.need}</p></div>
         </div>
