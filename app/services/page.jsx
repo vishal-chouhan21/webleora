@@ -102,14 +102,14 @@ export default function Services() {
       </section>
 
       {/* ================= WHY PARTNER WITH WEBLEORA ================= */}
-      <section className="wl-svc-outcomes-section" style={{ background: '#081423', padding: '95px 0 90px' }}>
+      <section className="wl-svc-outcomes-section" style={{ background: '#081423', padding: '70px 0 52px' }}>
         <div className="container">
-          <div className="row section-row text-center mb-5">
+          <div className="row section-row text-center mb-4">
             <div className="col-lg-12">
               <Title sub="the webleora standard" dark>
                 Why Partner with Webleora?
               </Title>
-              <p className="wl-svc-section-lead" style={{ color: '#94a3b8', maxWidth: 780, margin: '14px auto 0' }}>
+              <p className="wl-svc-section-lead" style={{ color: '#94a3b8', maxWidth: 780, margin: '10px auto 0' }}>
                 Engineering rigor, direct technical accountability, and 100% intellectual property ownership with zero vendor lock-in.
               </p>
             </div>
@@ -144,12 +144,12 @@ export default function Services() {
       </section>
 
       {/* ================= 5-STAGE DELIVERY PROCESS ================= */}
-      <section className="wl-svc-process-section" style={{ background: '#fbf9f4', padding: '95px 0 90px' }}>
+      <section className="wl-svc-process-section" style={{ background: '#fbf9f4', padding: '45px 0 60px' }}>
         <div className="container">
-          <div className="row section-row text-center mb-5">
+          <div className="row section-row text-center mb-4">
             <div className="col-lg-12">
               <Title sub="delivery roadmap">Our 5-Stage Delivery Process</Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 760, margin: '14px auto 0' }}>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 760, margin: '10px auto 0' }}>
                 Every engagement follows a structured milestone roadmap with written sprint deliverables and weekly staging demonstrations.
               </p>
             </div>

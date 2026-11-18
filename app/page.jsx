@@ -122,7 +122,7 @@ export default function Home() {
               </div>
 
               {/* Trust Points */}
-              <div style={{ marginTop: '28px', display: 'flex', flexWrap: 'wrap', gap: '16px 24px' }}>
+              <div style={{ marginTop: '16px', display: 'flex', flexWrap: 'wrap', gap: '10px 20px' }}>
                 {trustPoints.map((tp) => (
                   <span
                     key={tp}
