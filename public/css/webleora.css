@@ -293,29 +293,63 @@
 .wl-contact-top a {
   color: #fff;
   font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.wl-contact-top a:hover {
+  color: #d8ac66 !important;
 }
 
 .wl-contact-top i {
-  color: var(--accent-color);
+  color: #d8ac66;
   margin-right: 8px;
 }
 
 .topbar-social-links ul {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex !important;
+  gap: 18px !important;
+  justify-content: flex-end !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.topbar-social-links a {
-  color: #fff;
-  transition: all 0.3s;
+.topbar-social-links ul li {
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
 }
 
-.topbar-social-links a:hover {
-  color: var(--accent-color);
+.topbar-social-links a,
+.topbar-social-links ul li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.topbar-social-links a i,
+.topbar-social-links ul li a i {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.topbar-social-links a:hover,
+.topbar-social-links ul li:hover a,
+.topbar-social-links ul li a:hover {
+  color: #d8ac66 !important;
+  transform: translateY(-2px) !important;
+}
+
+.topbar-social-links a:hover i,
+.topbar-social-links ul li:hover a i,
+.topbar-social-links ul li a:hover i {
+  color: #d8ac66 !important;
+  filter: drop-shadow(0 2px 8px rgba(216, 172, 102, 0.5)) !important;
 }
 
 @media (max-width: 767px) {

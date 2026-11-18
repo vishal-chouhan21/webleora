@@ -511,7 +511,7 @@ body {
 }
 
 .topbar-info-text p a:hover {
-  color: var(--primary-color);
+  color: #d8ac66 !important;
 }
 
 .topbar-links {
@@ -546,7 +546,7 @@ body {
 }
 
 .topbar-contact-info ul li:hover {
-  color: var(--primary-color);
+  color: #d8ac66 !important;
 }
 
 .topbar-contact-info ul li:last-child {
@@ -593,7 +593,7 @@ body {
 }
 
 .topbar-social-links ul li:hover a {
-  color: var(--primary-color);
+  color: #d8ac66 !important;
 }
 
 .topbar-social-links ul li a i {
@@ -3027,7 +3027,7 @@ header.main-header .header-sticky.active {
 }
 
 .footer-social-links ul li:hover a {
-  border-color: var(--primary-color);
+  border-color: #d8ac66 !important;
 }
 
 .footer-social-links ul li a i {
@@ -3037,7 +3037,7 @@ header.main-header .header-sticky.active {
 }
 
 .footer-social-links ul li:hover a i {
-  color: var(--primary-color);
+  color: #d8ac66 !important;
 }
 
 .footer-newsletter-form {
