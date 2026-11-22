@@ -379,7 +379,7 @@ body {
 }
 
 .section-row {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .section-row .section-title {
@@ -1792,32 +1792,39 @@ header.main-header .header-sticky.active {
 
 .why-choose-image {
   margin-right: 20px;
+  height: 100%;
 }
 
 .why-choose-image figure {
-  display: block;
-  border-radius: 30px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .why-choose-image img {
   width: 100%;
-  aspect-ratio: 1 / 1.25;
+  height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 24px;
 }
 
 .why-choose-item {
   position: relative;
   background-color: #ffffff !important;
-  border-radius: 30px;
+  border-radius: 18px;
   border: 1.5px solid #ece7dc;
-  box-shadow: 0 4px 20px rgba(11, 34, 57, 0.05);
-  padding: 25px 30px;
+  box-shadow: 0 4px 18px rgba(11, 34, 57, 0.04);
+  padding: 16px 20px;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin-bottom: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .why-choose-item:before,
@@ -1830,9 +1837,9 @@ header.main-header .header-sticky.active {
 
 .why-choose-item:hover {
   background-color: #ffffff !important;
-  transform: translateY(-4px);
+  transform: translateX(4px);
   border-color: #d8ac66;
-  box-shadow: 0 12px 30px rgba(11, 34, 57, 0.09);
+  box-shadow: 0 8px 24px rgba(11, 34, 57, 0.08);
 }
 
 .why-choose-item:last-child {
@@ -1841,13 +1848,28 @@ header.main-header .header-sticky.active {
 
 .why-choose-item .icon-box {
   position: relative;
-  margin-right: 30px;
+  margin-right: 0;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: rgba(216, 172, 102, 0.12);
+  border: 1px solid rgba(216, 172, 102, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
   z-index: 1;
+  flex-shrink: 0;
+  color: #c58f3f;
+  font-size: 18px;
 }
 
 .why-choose-item .icon-box img {
-  width: 100%;
-  max-width: 80px;
+  width: 22px;
+  height: 22px;
+  max-width: 22px;
+  object-fit: contain;
   transition: all 0.4s ease-in-out;
 }
 
@@ -1857,12 +1879,27 @@ header.main-header .header-sticky.active {
 
 .why-choose-item-content {
   position: relative;
-  width: calc(100% - 110px);
+  width: auto;
+  flex: 1;
   z-index: 1;
 }
 
 .why-choose-item-content h3 {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #0b2239;
+  line-height: 1.35;
+  transition: all 0.3s ease-in-out;
+}
+
+.why-choose-item-content p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #475569;
+  transition: all 0.3s ease-in-out;
+}
   text-transform: capitalize;
   margin-bottom: 10px;
   color: #0b2239;
@@ -2774,14 +2811,13 @@ header.main-header .header-sticky.active {
 
 .faq-image figure {
   display: block;
-  border-radius: 30px;
+  border-radius: 24px;
 }
 
 .faq-image img {
   width: 100%;
-  aspect-ratio: 1 / 0.608;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 24px;
 }
 
 .faq-accordion .accordion-item {
@@ -5419,7 +5455,7 @@ header.main-header .header-sticky.active {
   }
 
   .section-row {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
   }
 
   .section-row .section-title {
@@ -5427,7 +5463,7 @@ header.main-header .header-sticky.active {
   }
 
   .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .section-title h3 {
@@ -5694,38 +5730,47 @@ header.main-header .header-sticky.active {
 
   .why-choose-image {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    height: auto;
   }
 
   .why-choose-image figure,
   .why-choose-image img {
     border-radius: 20px;
+    max-height: 340px;
   }
 
   .why-choose-image img {
-    aspect-ratio: 1 / 0.75;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
   }
 
   .why-choose-item {
-    padding: 20px 25px;
-    border-radius: 20px;
-    margin-bottom: 30px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    gap: 12px;
   }
 
   .why-choose-item .icon-box {
-    margin-right: 20px;
+    margin-right: 0;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
   }
 
   .why-choose-item .icon-box img {
-    max-width: 60px;
+    max-width: 20px;
   }
 
   .why-choose-item-content {
-    width: calc(100% - 80px);
+    width: auto;
+    flex: 1;
   }
 
   .why-choose-item-content h3 {
-    margin-bottom: 5px;
+    font-size: 15px;
+    margin-bottom: 3px;
   }
 
   .why-choose-counter-list {
@@ -6819,7 +6864,7 @@ header.main-header .header-sticky.active {
   }
 
   .section-row {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 
   .section-title h1 {

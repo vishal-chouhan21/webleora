@@ -50,9 +50,9 @@ export default function MobileAppPortfolioPage() {
 
 
       {/* ================= MOBILE APPS LIST ================= */}
-      <section className="page-section" style={{ background: '#fbf9f4', padding: '80px 0 100px' }}>
+      <section className="page-section" style={{ background: '#fbf9f4' }}>
         <div className="container">
-          <div className="section-title text-center mb-5">
+          <div className="section-title text-center">
             <span style={{ color: '#c58f3f', fontSize: '13px', fontWeight: '800', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
               Custom Mobile Applications
             </span>

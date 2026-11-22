@@ -122,7 +122,7 @@ export default function Home() {
               </div>
 
               {/* Trust Points */}
-              <div style={{ marginTop: '16px', display: 'flex', flexWrap: 'wrap', gap: '10px 20px' }}>
+              <div style={{ marginTop: '22px', display: 'flex', flexWrap: 'wrap', gap: '10px 20px' }}>
                 {trustPoints.map((tp) => (
                   <span
                     key={tp}
@@ -234,7 +234,7 @@ export default function Home() {
           <ServiceCards items={cards} />
           <div className="text-center mt-4">
             <Link href="/services" className="btn-default">
-              View All 9 Services &amp; Tech Details
+              View All Services &amp; Tech Details
             </Link>
           </div>
         </div>
@@ -266,7 +266,7 @@ export default function Home() {
       {/* ================= WHY CHOOSE WEBLEORA ================= */}
       <div className="why-choose-us">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-stretch">
             <div className="col-lg-6">
               <div className="why-choose-image">
                 <figure className="image-anime">
@@ -280,22 +280,26 @@ export default function Home() {
                   Why Partner with Webleora?
                 </Title>
                 <div className="why-choose-list">
-                  {why.map(([t, d], i) => (
-                    <div className="why-choose-item" key={t}>
-                      <div className="icon-box">
-                        <img
-                          src={`/images/icon-why-choose-${(i % 3) + 1}.svg`}
-                          alt={`${t} Icon`}
-                          width="32"
-                          height="32"
-                        />
+                  {why.map(([t, d], i) => {
+                    const whyIcons = [
+                      "fa-layer-group",
+                      "fa-file-invoice-dollar",
+                      "fa-users-gear",
+                      "fa-shield-halved",
+                      "fa-location-dot",
+                    ];
+                    return (
+                      <div className="why-choose-item" key={t}>
+                        <div className="icon-box">
+                          <i className={`fa-solid ${whyIcons[i] || 'fa-check'}`} aria-hidden="true" />
+                        </div>
+                        <div className="why-choose-item-content">
+                          <h3>{t}</h3>
+                          <p>{d}</p>
+                        </div>
                       </div>
-                      <div className="why-choose-item-content">
-                        <h3>{t}</h3>
-                        <p>{d}</p>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -328,7 +332,7 @@ export default function Home() {
       {/* ================= FAQ SECTION (SHORT CURATED 4 QUESTIONS ON HOMEPAGE) ================= */}
       <div className="our-faqs home-our-faqs">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-stretch">
             <div className="col-lg-6">
               <div className="faq-content">
                 <div className="section-title dark-section">
@@ -346,11 +350,13 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6">
-              <Accordion items={homeFaqs} />
-              <div style={{ marginTop: '24px' }}>
-                <Link href="/faqs" className="btn-default btn-highlighted">
-                  View All FAQs &amp; Pricing
-                </Link>
+              <div className="faq-accordion-wrap">
+                <Accordion items={homeFaqs} />
+                <div className="faq-btn-wrap">
+                  <Link href="/faqs" className="btn-default btn-highlighted">
+                    View All FAQs &amp; Pricing <i className="fa-solid fa-arrow-right" style={{ marginLeft: '8px' }} aria-hidden="true" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

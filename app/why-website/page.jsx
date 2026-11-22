@@ -85,7 +85,7 @@ export default function WhyWebsitePage() {
       {/* Financial Comparison Table */}
       <section className="wl-roi-comparison-section">
         <div className="container">
-          <div className="section-title dark-section text-center mb-5">
+          <div className="section-title dark-section text-center">
             <span className="wl-kicker-gold">THE COST OF INACTION</span>
             <h2>
               Generic Template <span>vs. High-Performance Webleora Platform</span>

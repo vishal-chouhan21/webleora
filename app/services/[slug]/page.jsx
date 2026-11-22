@@ -102,7 +102,7 @@ export default async function Service({ params }) {
 
             {/* Action Buttons */}
             <div className="wl-svc-hero-actions">
-              <Link href="/contact" className="wl-btn-quote" style={{ padding: '14px 28px', fontSize: '15px' }}>
+              <Link href="/contact" className="wl-btn-quote" style={{ padding: '10px 22px', fontSize: '14px' }}>
                 <i className="fa-solid fa-paper-plane" /> Request Free Technical Proposal
               </Link>
               <a
@@ -110,7 +110,7 @@ export default async function Service({ params }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wl-btn-live"
-                style={{ padding: '14px 26px', fontSize: '15px' }}
+                style={{ padding: '10px 20px', fontSize: '14px' }}
               >
                 <i className="fa-brands fa-whatsapp" /> Chat on WhatsApp
               </a>
@@ -118,7 +118,7 @@ export default async function Service({ params }) {
                 <Link
                   href={details.portfolioLink}
                   className="wl-btn-live"
-                  style={{ padding: '14px 24px', fontSize: '15px', background: 'transparent' }}
+                  style={{ padding: '10px 20px', fontSize: '14px', background: 'transparent' }}
                 >
                   <i className="fa-solid fa-arrow-up-right-from-square" /> {details.portfolioLabel || 'View Live Projects'}
                 </Link>
@@ -326,7 +326,7 @@ export default async function Service({ params }) {
       </section>
 
       {/* ================= FAQS ACCORDION ================= */}
-      <section className="our-faqs" style={{ background: '#fdfbf7', padding: '90px 0 80px' }}>
+      <section className="our-faqs" style={{ background: '#fdfbf7' }}>
         <div className="container">
           <div className="row section-row text-center">
             <div className="col-lg-12">

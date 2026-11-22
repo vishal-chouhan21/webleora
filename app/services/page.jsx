@@ -40,12 +40,12 @@ export default function Services() {
       <PageHeader title="Our Services" />
 
       {/* ================= 9 CORE SERVICES GRID ================= */}
-      <section className="page-section" style={{ background: '#fdfbf7', padding: '95px 0 85px' }}>
+      <section className="page-section" style={{ background: '#fdfbf7' }}>
         <div className="container">
-          <div className="row section-row text-center mb-5">
+          <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="specialized capabilities">Digital Services for Every Stage of Your Business</Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 840, margin: '14px auto 0' }}>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 840, margin: '10px auto 0' }}>
                 From high-speed corporate websites and SaaS applications to custom ERP platforms, mobile apps, and continuous cloud maintenance, our engineering team builds tailored software designed around your specific commercial goals.
               </p>
             </div>
@@ -102,9 +102,9 @@ export default function Services() {
       </section>
 
       {/* ================= WHY PARTNER WITH WEBLEORA ================= */}
-      <section className="wl-svc-outcomes-section" style={{ background: '#081423', padding: '70px 0 52px' }}>
+      <section className="wl-svc-outcomes-section" style={{ background: '#081423' }}>
         <div className="container">
-          <div className="row section-row text-center mb-4">
+          <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="the webleora standard" dark>
                 Why Partner with Webleora?
@@ -144,9 +144,9 @@ export default function Services() {
       </section>
 
       {/* ================= 5-STAGE DELIVERY PROCESS ================= */}
-      <section className="wl-svc-process-section" style={{ background: '#fbf9f4', padding: '45px 0 60px' }}>
+      <section className="wl-svc-process-section" style={{ background: '#fbf9f4' }}>
         <div className="container">
-          <div className="row section-row text-center mb-4">
+          <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="delivery roadmap">Our 5-Stage Delivery Process</Title>
               <p className="wl-svc-section-lead" style={{ maxWidth: 760, margin: '10px auto 0' }}>
@@ -178,12 +178,12 @@ export default function Services() {
       />
 
       {/* ================= FAQS ACCORDION ================= */}
-      <div className="our-faqs" style={{ background: '#ffffff', padding: '90px 0 85px' }}>
+      <div className="our-faqs" style={{ background: '#ffffff' }}>
         <div className="container">
-          <div className="row section-row text-center mb-5">
+          <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="faq">Frequently Asked Questions</Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 700, margin: '14px auto 0' }}>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 700, margin: '10px auto 0' }}>
                 Transparent answers about our engineering methodology, pricing models, and development timelines.
               </p>
             </div>

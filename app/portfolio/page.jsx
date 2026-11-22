@@ -48,7 +48,7 @@ export default function PortfolioHubPage() {
 
 
       {/* ================= 1. WEBSITE DESIGN SHOWCASE SECTION ================= */}
-      <section className="page-section" style={{ background: '#ffffff', padding: '80px 0 60px' }}>
+      <section className="page-section" style={{ background: '#ffffff' }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-end flex-wrap mb-4" style={{ gap: '16px' }}>
             <div>
@@ -151,7 +151,7 @@ export default function PortfolioHubPage() {
       </section>
 
       {/* ================= 2. MOBILE APP DEVELOPMENT SHOWCASE SECTION ================= */}
-      <section className="page-section" style={{ background: '#fbf9f4', padding: '80px 0 60px', borderTop: '1px solid #eae5d9', borderBottom: '1px solid #eae5d9' }}>
+      <section className="page-section" style={{ background: '#fbf9f4', borderTop: '1px solid #eae5d9', borderBottom: '1px solid #eae5d9' }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-end flex-wrap mb-4" style={{ gap: '16px' }}>
             <div>
@@ -230,7 +230,7 @@ export default function PortfolioHubPage() {
       </section>
 
       {/* ================= 3. GRAPHIC DESIGN SHOWCASE SECTION ================= */}
-      <section className="page-section" style={{ background: '#ffffff', padding: '80px 0 90px' }}>
+      <section className="page-section" style={{ background: '#ffffff' }}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-end flex-wrap mb-4" style={{ gap: '16px' }}>
             <div>

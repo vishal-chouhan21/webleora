@@ -135,17 +135,25 @@ export default function About() {
                 What Guides Our Work
               </Title>
               <div className="why-choose-list">
-                {guides.map(([t, d], i) => (
-                  <div className="why-choose-item" key={t}>
-                    <div className="icon-box">
-                      <img src={`/images/icon-why-choose-${(i % 3) + 1}.svg`} alt="" />
+                {guides.map(([t, d], i) => {
+                  const guideIcons = [
+                    "fa-lightbulb",
+                    "fa-bullseye",
+                    "fa-clipboard-check",
+                    "fa-shield-halved",
+                  ];
+                  return (
+                    <div className="why-choose-item" key={t}>
+                      <div className="icon-box">
+                        <i className={`fa-solid ${guideIcons[i] || "fa-check"}`} aria-hidden="true" />
+                      </div>
+                      <div className="why-choose-item-content">
+                        <h3>{t}</h3>
+                        <p>{d}</p>
+                      </div>
                     </div>
-                    <div className="why-choose-item-content">
-                      <h3>{t}</h3>
-                      <p>{d}</p>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -170,9 +178,9 @@ export default function About() {
       </div>
 
       {/* ================= OUR CORE COMMITMENTS ================= */}
-      <div className="page-section" style={{ background: '#f8fafc', padding: '80px 0' }}>
+      <div className="page-section" style={{ background: '#f8fafc' }}>
         <div className="container">
-          <div className="row text-center" style={{ marginBottom: '44px' }}>
+          <div className="row text-center" style={{ marginBottom: '26px' }}>
             <div className="col-lg-12">
               <span className="wl-badge">Our Commitment</span>
               <h2 style={{ fontSize: 'clamp(28px, 3.2vw, 38px)', fontWeight: '800', color: '#0b2239', marginTop: '10px' }}>

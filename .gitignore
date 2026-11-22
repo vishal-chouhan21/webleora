@@ -2,3 +2,5 @@ node_modules
 .next
 php/config.php
 config.bat
+*.exe
+
