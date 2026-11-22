@@ -9,7 +9,7 @@
     "php": "php -S 127.0.0.1:8000 -t php"
   },
   "dependencies": {
-    "next": "^16.4.3",
+    "next": "^16.4.6",
     "nodemailer": "^10.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
