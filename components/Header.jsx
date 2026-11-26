@@ -84,6 +84,7 @@ export default function Header() {
                       <Link className="nav-link" href={`/products/wedding-themes#${t.id}`}>{t.title}</Link>
                     </li>
                   ))}
+                  <li className="nav-item"><Link className="nav-link" href="/products/wedding-themes#all-occasions">Birthdays, Anniversaries &amp; Parties</Link></li>
                 </ul></li>
               <li className="nav-item submenu"><Link className="nav-link" href="/portfolio">Portfolio</Link>
                 <ul>
@@ -102,7 +103,7 @@ export default function Header() {
         <div className="responsive-menu">{open && <div className="slicknav_menu"><ul className="slicknav_nav" onClick={close}>
           <li><Link href="/">Home</Link></li><li><Link href="/about">About Us</Link></li><li><Link href="/services">Services</Link></li>
           <li><Link href="/products">Our Products</Link></li>
-          <li style={{ paddingLeft: '14px' }}><Link href="/products/wedding-themes">• Wedding Invitation Themes</Link></li>
+          <li style={{ paddingLeft: '14px' }}><Link href="/products/wedding-themes">• Wedding, Birthday &amp; Event Themes</Link></li>
           <li><Link href="/portfolio">Portfolio</Link></li>
           <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/website-design">• Website Design Portfolio</Link></li>
           <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/mobile-app">• Mobile App Portfolio</Link></li>

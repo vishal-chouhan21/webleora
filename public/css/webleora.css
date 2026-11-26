@@ -4921,6 +4921,107 @@ header.main-header .header-btn .btn-default:hover::before {
   border-top-color: rgba(255, 255, 255, 0.12);
 }
 
+/* Occasions & Custom Celebrations Grid */
+.wl-occasion-card {
+  background: #ffffff;
+  border: 1.5px solid #ece7dc;
+  border-radius: 18px;
+  padding: 24px 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(11, 34, 57, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wl-occasion-card:hover {
+  transform: translateY(-4px);
+  border-color: #d8ac66;
+  box-shadow: 0 14px 32px rgba(11, 34, 57, 0.09);
+}
+
+.wl-occasion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.wl-occasion-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(216, 172, 102, 0.14);
+  border: 1px solid rgba(216, 172, 102, 0.35);
+  color: #b87e24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.wl-occasion-card:hover .wl-occasion-icon {
+  background: #d8ac66;
+  color: #081423;
+}
+
+.wl-occasion-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #9f6d20;
+  background: #fbf5e8;
+  border: 1px solid rgba(216, 172, 102, 0.35);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.wl-occasion-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0b2239;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.wl-occasion-card p {
+  font-size: 13.8px;
+  line-height: 1.58;
+  color: #475569;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.wl-occasion-points {
+  list-style: none;
+  padding: 12px 0 0;
+  margin: 0;
+  border-top: 1px solid #f1ece1;
+}
+
+.wl-occasion-points li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.8px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.wl-occasion-points li:last-child {
+  margin-bottom: 0;
+}
+
+.wl-occasion-points li i {
+  color: #c58f3f;
+  font-size: 11px;
+}
+
 @media (max-width: 1199px) {
   .wl-themes-grid {
     grid-template-columns: repeat(2, 1fr);

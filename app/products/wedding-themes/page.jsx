@@ -4,6 +4,7 @@ import Accordion from '@/components/Accordion';
 import WeddingThemePreview from '@/components/WeddingThemePreview';
 import {
   weddingThemes,
+  occasionTemplates,
   weddingBenefits,
   weddingLaunchSteps,
   weddingPackages,
@@ -13,17 +14,17 @@ import site from '@/config/site';
 
 export const metadata = {
   title: {
-    absolute: 'Luxury Digital Wedding Invitation Themes & Websites | Webleora Products',
+    absolute: 'Wedding, Birthday, Anniversary & Event Invitation Templates | Webleora Products',
   },
   description:
-    'Explore interactive digital wedding invitation themes by Webleora featuring 3D book reveals, Royal Gate entrances, wax-seal envelopes, bilingual Hindi & English support, live countdowns, music, and Google Maps venue directions.',
+    'We create custom interactive invitation websites for Weddings, Birthday Parties, Anniversaries, Housewarmings, and all special celebrations featuring 3D reveals, live countdowns, music, and Google Maps venue directions.',
   alternates: {
     canonical: './',
   },
   openGraph: {
-    title: 'Interactive Digital Wedding Invitation Websites & Themes | Webleora',
+    title: 'Interactive Wedding, Birthday, Anniversary & Event Website Templates | Webleora',
     description:
-      'Replace static wedding PDFs with royal mobile-first invitation websites. View live demos and book custom personalization in 48 hours.',
+      'Replace static invitation PDFs with royal mobile-first websites for Weddings, Birthdays, Anniversaries & Parties. View live demos and launch in 48 hours.',
     url: './',
     type: 'website',
     images: ['/images/page-header-bg.jpg'],
@@ -50,31 +51,31 @@ export default function WeddingThemesProductPage() {
               <span className="wl-sep">/</span>
               <Link href="/products">Our Products</Link>
               <span className="wl-sep">/</span>
-              <span className="wl-current">Wedding Invitation Themes</span>
+              <span className="wl-current">Wedding, Birthday &amp; Event Themes</span>
             </nav>
 
             <div className="wl-svc-hero-badge">
               <i className="fa-solid fa-crown" aria-hidden="true" />
-              <span>Webleora Signature Product · Ready in 48 Hours</span>
+              <span>All Special Occasions · Custom-Built in 48 Hours</span>
             </div>
 
             <h1 className="wl-svc-hero-title">
-              Luxury Interactive Wedding Invitation Websites &amp; Themes
+              Luxury Interactive Websites for Weddings, Birthdays, Anniversaries &amp; Parties
             </h1>
 
             <p className="wl-svc-hero-desc">
-              Turn every wedding invitation into a royal, unforgettable digital experience. Replace compressed WhatsApp PDFs with bespoke interactive websites featuring 3D book or wax-seal envelope reveals, bilingual Hindi &amp; English typography, live countdowns, wedding music, multi-day function schedules, and one-tap Google Maps directions.
+              Turn every celebration into an unforgettable digital invitation. We create this exact royal interactive website style for Weddings, Engagements, Birthday Parties, Anniversaries, Housewarmings, and Private Parties—complete with 3D book or wax-seal reveals, bilingual Hindi &amp; English typography, live countdowns, music, schedules, and Google Maps directions.
             </p>
 
             <div className="wl-svc-tech-strip">
-              <span className="wl-svc-tech-label">Included In Every Theme:</span>
+              <span className="wl-svc-tech-label">Custom Templates For:</span>
               <div className="wl-svc-tech-tags">
+                <span className="wl-svc-tech-tag">Weddings &amp; Engagements</span>
+                <span className="wl-svc-tech-tag">Birthday Parties</span>
+                <span className="wl-svc-tech-tag">25th / 50th Anniversaries</span>
+                <span className="wl-svc-tech-tag">Cocktail &amp; VIP Parties</span>
+                <span className="wl-svc-tech-tag">Baby Showers &amp; Griha Pravesh</span>
                 <span className="wl-svc-tech-tag">3D Book, Gate &amp; Wax-Seal Reveals</span>
-                <span className="wl-svc-tech-tag">WhatsApp Share Ready</span>
-                <span className="wl-svc-tech-tag">Hindi &amp; English Bilingual</span>
-                <span className="wl-svc-tech-tag">Ambient Wedding Music</span>
-                <span className="wl-svc-tech-tag">Live Countdown &amp; Itinerary</span>
-                <span className="wl-svc-tech-tag">Google Maps Venue PIN</span>
               </div>
             </div>
 
@@ -84,24 +85,24 @@ export default function WeddingThemesProductPage() {
                 className="wl-btn-quote"
                 style={{ padding: '11px 24px', fontSize: '14.5px' }}
               >
-                <i className="fa-solid fa-eye" aria-hidden="true" /> Browse 3 Live Wedding Themes
+                <i className="fa-solid fa-eye" aria-hidden="true" /> Browse 3 Live Demos
+              </a>
+              <a
+                href="#all-occasions"
+                className="wl-btn-live"
+                style={{ padding: '11px 22px', fontSize: '14.5px' }}
+              >
+                <i className="fa-solid fa-wand-magic-sparkles" aria-hidden="true" /> All Occasions We Build
               </a>
               <a
                 href={buildThemeWhatsapp()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wl-btn-live"
-                style={{ padding: '11px 22px', fontSize: '14.5px' }}
-              >
-                <i className="fa-brands fa-whatsapp" aria-hidden="true" /> Book Theme on WhatsApp
-              </a>
-              <Link
-                href="/contact"
-                className="wl-btn-live"
                 style={{ padding: '11px 22px', fontSize: '14.5px', background: 'transparent' }}
               >
-                <i className="fa-solid fa-paper-plane" aria-hidden="true" /> Request Custom Quote
-              </Link>
+                <i className="fa-brands fa-whatsapp" aria-hidden="true" /> Book Custom Template
+              </a>
             </div>
           </div>
         </div>
@@ -113,10 +114,10 @@ export default function WeddingThemesProductPage() {
           <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="live theme collection">
-                Choose Your Royal Wedding Invitation Edition
+                Preview Our Live Interactive Theme Editions
               </Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 780, margin: '10px auto 0' }}>
-                Test all three live deployments on mobile or desktop right now. Every detail—names, family blessings, ceremony dates, photos, dress codes, shlokas, and music—is personalized for your celebration.
+              <p className="wl-svc-section-lead" style={{ maxWidth: 800, margin: '10px auto 0' }}>
+                Test all three live deployments on mobile or desktop right now. Love the style? We create this exact template design for your Wedding, Birthday Party, Anniversary, Engagement, or Custom Event—personalized in 48 hours.
               </p>
             </div>
           </div>
@@ -210,16 +211,68 @@ export default function WeddingThemesProductPage() {
         </div>
       </section>
 
+      {/* ================= WE CREATE THIS STYLE FOR EVERY OCCASION ================= */}
+      <section id="all-occasions" className="page-section" style={{ background: '#ffffff' }}>
+        <div className="container">
+          <div className="row section-row text-center">
+            <div className="col-lg-12">
+              <Title sub="custom-built for any occasion">
+                We Create This Style for Weddings, Birthdays, Anniversaries &amp; All Parties
+              </Title>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 800, margin: '10px auto 0' }}>
+                Loved our 3D reveal gates, countdowns, and luxury layouts? Tell us your occasion—we build this exact interactive template style for weddings, birthdays, anniversaries, baby showers, housewarmings, and private galas.
+              </p>
+            </div>
+          </div>
+
+          <div className="row g-4">
+            {occasionTemplates.map((occ) => (
+              <div className="col-lg-4 col-md-6" key={occ.title}>
+                <div className="wl-occasion-card">
+                  <div className="wl-occasion-header">
+                    <span className="wl-occasion-icon">
+                      <i className={`fa-solid ${occ.icon}`} aria-hidden="true" />
+                    </span>
+                    <span className="wl-occasion-tag">{occ.tag}</span>
+                  </div>
+                  <h3>{occ.title}</h3>
+                  <p>{occ.desc}</p>
+                  <ul className="wl-occasion-points">
+                    {occ.includes.map((pt) => (
+                      <li key={pt}>
+                        <i className="fa-solid fa-check" aria-hidden="true" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid #f1ece1' }}>
+                    <a
+                      href={buildThemeWhatsapp(occ.title)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="wl-svc-related-link"
+                      style={{ marginTop: 0 }}
+                    >
+                      Request {occ.tag} Template <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ================= WHY DIGITAL WEDDING WEBSITES CONVERT GUESTS ================= */}
-      <section className="wl-svc-capabilities-section" style={{ background: '#ffffff' }}>
+      <section className="wl-svc-capabilities-section" style={{ background: '#fbf9f4' }}>
         <div className="container">
           <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="why digital invitations">
-                Why Families &amp; Planners Love Interactive Wedding Websites
+                Why Families &amp; Planners Love Interactive Celebration Websites
               </Title>
               <p className="wl-svc-section-lead">
-                Crafted for Indian hospitality and effortless international sharing—delivering clear event details, directions, and memorable storytelling in one tap.
+                Crafted for warm hospitality and effortless sharing—delivering clear event details, directions, music, and memorable storytelling in one tap.
               </p>
             </div>
           </div>
@@ -346,10 +399,10 @@ export default function WeddingThemesProductPage() {
           <div className="wl-svc-cta-card">
             <div className="row align-items-center">
               <div className="col-lg-8">
-                <span className="wl-svc-cta-tag">Celebrate in Royal Style</span>
-                <h2>Ready to Personalize Your Digital Wedding Invitation?</h2>
+                <span className="wl-svc-cta-tag">Celebrate Every Milestone in Style</span>
+                <h2>Ready to Build Your Wedding, Birthday, Anniversary or Party Website?</h2>
                 <p>
-                  Message us with your favorite theme (Dhruv &amp; Nidhi Book Reveal, Shubh Vivah Gate, or Wax-Seal Burgundy) and wedding dates—we’ll share pricing options and deliver your staging preview within 48 hours.
+                  Message us with your occasion and favorite reveal style (Book Reveal, Royal Gate, or Wax-Seal Envelope) along with your dates—we’ll share pricing options and deliver your personalized preview within 48 hours.
                 </p>
               </div>
               <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">

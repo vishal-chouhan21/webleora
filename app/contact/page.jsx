@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="wl-form-card">
               <span className="wl-form-card__sub">Contact us</span>
               <h2 className="wl-form-card__title">Send us your project details</h2>
-              <ContactForm serviceOptions={[...cats.map((c) => c.title), 'Wedding Invitation Website & Theme']} />
+              <ContactForm serviceOptions={[...cats.map((c) => c.title), 'Wedding, Birthday, Anniversary & Event Website']} />
             </div>
 
             {/* RIGHT — intro, info grid, map */}

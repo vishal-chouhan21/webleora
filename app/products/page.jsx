@@ -1,22 +1,22 @@
 import Link from 'next/link';
 import { PageHeader, Title, Cta } from '@/components/ui';
-import { productsCatalog, weddingThemes } from '@/data/productsData';
+import { productsCatalog, weddingThemes, occasionTemplates } from '@/data/productsData';
 import WeddingThemePreview from '@/components/WeddingThemePreview';
 import site from '@/config/site';
 
 export const metadata = {
   title: {
-    absolute: 'Our Products | Wedding Invitation Themes & Digital Solutions | Webleora',
+    absolute: 'Our Products | Wedding, Birthday, Anniversary & Event Themes | Webleora',
   },
   description:
-    'Explore ready-to-launch digital products by Webleora, including royal interactive wedding invitation websites with 3D reveals, live countdowns, music, and bilingual support.',
+    'Explore ready-to-launch digital invitation templates by Webleora for Weddings, Birthdays, Anniversaries, Parties, and all special celebrations.',
   alternates: {
     canonical: './',
   },
   openGraph: {
-    title: 'Our Products | Ready-to-Launch Digital Products | Webleora',
+    title: 'Our Products | Custom Invitation & Event Templates | Webleora',
     description:
-      'Discover ready-to-customize interactive digital wedding invitation websites and commercial software products built by Webleora.',
+      'Discover interactive invitation website templates built by Webleora for Weddings, Birthdays, Anniversaries, Housewarmings, and Parties.',
     url: './',
     type: 'website',
     images: ['/images/page-header-bg.jpg'],
@@ -26,7 +26,7 @@ export const metadata = {
 export default function ProductsHubPage() {
   const whatsappPhone = site.phone ? site.phone.replace(/\D/g, '') : '919589136915';
   const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(
-    'Hello Webleora, I would like to inquire about your Digital Wedding Invitation Themes under Our Products.'
+    'Hello Webleora, I would like to book a custom interactive invitation template (Wedding / Birthday / Anniversary / Party).'
   )}`;
 
   return (
@@ -39,10 +39,10 @@ export default function ProductsHubPage() {
           <div className="row section-row text-center">
             <div className="col-lg-12">
               <Title sub="ready-to-launch digital products">
-                Engineered Digital Products You Can Launch Fast
+                Interactive Templates for Weddings, Birthdays, Anniversaries &amp; All Events
               </Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 820, margin: '10px auto 0' }}>
-                Alongside custom enterprise development, Webleora builds signature digital products engineered for quick personalization and effortless guest sharing—starting with our flagship collection of interactive wedding invitation websites.
+              <p className="wl-svc-section-lead" style={{ maxWidth: 840, margin: '10px auto 0' }}>
+                Alongside custom software engineering, Webleora builds signature digital invitation templates engineered for quick personalization—for Weddings, Birthday Parties, Anniversaries, Engagements, Baby Showers, Housewarmings, and every celebration worth sharing.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function ProductsHubPage() {
 
                       <div className="wl-product-spotlight-actions">
                         <Link href={`/products/${product.slug}`} className="btn-default btn-highlighted">
-                          Explore All 3 Wedding Themes
+                          Explore All Themes &amp; Occasions
                         </Link>
                         <a
                           href={whatsappUrl}
@@ -88,16 +88,16 @@ export default function ProductsHubPage() {
                     <div className="col-lg-5">
                       <div className="wl-product-spotlight-stats">
                         <div className="wl-product-mini-stat">
-                          <strong>3 Live Demos</strong>
-                          <span>Interactive 3D Book, Royal Gate &amp; Wax-Seal Editions</span>
+                          <strong>All Occasions Supported</strong>
+                          <span>Custom-crafted for Weddings, Birthdays, Anniversaries, Parties &amp; More</span>
                         </div>
                         <div className="wl-product-mini-stat">
-                          <strong>48 Hours</strong>
-                          <span>Fast personalization with your names, schedule &amp; photos</span>
+                          <strong>48 Hours Launch</strong>
+                          <span>Fast personalization with your names, schedule, music &amp; photos</span>
                         </div>
                         <div className="wl-product-mini-stat">
-                          <strong>Bilingual Ready</strong>
-                          <span>Supports crisp English, Hindi &amp; regional traditions</span>
+                          <strong>Bilingual &amp; Interactive</strong>
+                          <span>3D Book, Royal Gate &amp; Wax-Seal reveals in English, Hindi &amp; regional scripts</span>
                         </div>
                       </div>
                     </div>
@@ -109,14 +109,53 @@ export default function ProductsHubPage() {
         </div>
       </section>
 
-      {/* ================= FEATURED LIVE WEDDING THEMES PREVIEW ================= */}
-      <section className="page-section" style={{ background: '#ffffff' }}>
+      {/* ================= OCCASIONS WE CREATE TEMPLATES FOR ================= */}
+      <section className="page-section" style={{ background: '#ffffff', paddingBottom: '20px' }}>
         <div className="container">
           <div className="row section-row text-center">
             <div className="col-lg-12">
-              <Title sub="featured collection">Live Wedding Theme Editions</Title>
-              <p className="wl-svc-section-lead" style={{ maxWidth: 740, margin: '10px auto 0' }}>
-                Click any theme to test its live Vercel deployment, or open the full Wedding Themes showcase for packages and customization details.
+              <Title sub="all occasions">We Create This Template Style for Every Celebration</Title>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 780, margin: '10px auto 0' }}>
+                Like the luxury reveal experience? Tell us your occasion and our team adapts this exact interactive digital invitation style for your event.
+              </p>
+            </div>
+          </div>
+
+          <div className="row g-4">
+            {occasionTemplates.map((occ) => (
+              <div className="col-lg-4 col-md-6" key={occ.title}>
+                <div className="wl-occasion-card">
+                  <div className="wl-occasion-header">
+                    <span className="wl-occasion-icon">
+                      <i className={`fa-solid ${occ.icon}`} aria-hidden="true" />
+                    </span>
+                    <span className="wl-occasion-tag">{occ.tag}</span>
+                  </div>
+                  <h3>{occ.title}</h3>
+                  <p>{occ.desc}</p>
+                  <ul className="wl-occasion-points">
+                    {occ.includes.map((pt) => (
+                      <li key={pt}>
+                        <i className="fa-solid fa-check" aria-hidden="true" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= FEATURED LIVE WEDDING THEMES PREVIEW ================= */}
+      <section className="page-section" style={{ background: '#fbf9f4' }}>
+        <div className="container">
+          <div className="row section-row text-center">
+            <div className="col-lg-12">
+              <Title sub="featured live demos">Live Interactive Theme Showcase</Title>
+              <p className="wl-svc-section-lead" style={{ maxWidth: 760, margin: '10px auto 0' }}>
+                Click any theme below to test its live deployment. Any of these styles can be personalized for a Wedding, Birthday Party, Anniversary, or Custom Event.
               </p>
             </div>
           </div>
@@ -169,15 +208,15 @@ export default function ProductsHubPage() {
 
           <div className="text-center mt-5">
             <Link href="/products/wedding-themes" className="btn-default">
-              View Complete Wedding Themes Marketing &amp; Packages
+              Explore Full Templates Showcase &amp; Packages
             </Link>
           </div>
         </div>
       </section>
 
       <Cta
-        title="Want a Custom Digital Product or Wedding Edition?"
-        text="Speak directly with our team in Indore to personalize a wedding invitation website within 48 hours or launch a bespoke digital product for your brand."
+        title="Planning a Wedding, Birthday, Anniversary or Party?"
+        text="Speak directly with our team in Indore to personalize a digital invitation website within 48 hours—tailored for any occasion or theme."
         btn="Get in Touch"
       />
     </>
