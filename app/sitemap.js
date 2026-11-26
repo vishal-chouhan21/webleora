@@ -8,6 +8,8 @@ export default function sitemap() {
     '/about',
     '/services',
     ...services.map((s) => `/services/${s.slug}`),
+    '/products',
+    '/products/wedding-themes',
     '/our-work',
     ...projects.map((p) => `/our-work/${p.slug}`),
     '/portfolio',

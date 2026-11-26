@@ -30,11 +30,13 @@ export default function Footer() {
               <h3>Quick Links</h3>
               <ul>
                 <li><Link href="/">Home</Link></li>
+                <li><Link href="/services">Services</Link></li>
+                <li><Link href="/products">Our Products</Link></li>
+                <li><Link href="/products/wedding-themes">Wedding Themes</Link></li>
                 <li><Link href="/portfolio">Portfolio</Link></li>
                 <li><Link href="/portfolio/website-design">Web Design Portfolio</Link></li>
                 <li><Link href="/portfolio/mobile-app">Mobile App Portfolio</Link></li>
                 <li><Link href="/portfolio/graphic-design">Graphic Design Portfolio</Link></li>
-                <li><Link href="/services">Services</Link></li>
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>

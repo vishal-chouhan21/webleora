@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import site from '@/config/site';
 import { services } from '@/data/content';
+import { productsCatalog, weddingThemes } from '@/data/productsData';
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [stuck, setStuck] = useState(false);
@@ -70,6 +71,20 @@ export default function Header() {
               <li className="nav-item"><Link className="nav-link" href="/about">About Us</Link></li>
               <li className="nav-item submenu"><Link className="nav-link" href="/services">Services</Link>
                 <ul>{services.map((s) => <li className="nav-item" key={s.slug}><Link className="nav-link" href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></li>
+              <li className="nav-item submenu"><Link className="nav-link" href="/products">Our Products</Link>
+                <ul>
+                  <li className="nav-item"><Link className="nav-link" href="/products">All Digital Products</Link></li>
+                  {productsCatalog.map((p) => (
+                    <li className="nav-item" key={p.slug}>
+                      <Link className="nav-link" href={`/products/${p.slug}`}>{p.menuTitle || p.title}</Link>
+                    </li>
+                  ))}
+                  {weddingThemes.map((t) => (
+                    <li className="nav-item" key={t.id}>
+                      <Link className="nav-link" href={`/products/wedding-themes#${t.id}`}>{t.title}</Link>
+                    </li>
+                  ))}
+                </ul></li>
               <li className="nav-item submenu"><Link className="nav-link" href="/portfolio">Portfolio</Link>
                 <ul>
                   <li className="nav-item"><Link className="nav-link" href="/portfolio/website-design">Website Design Portfolio</Link></li>
@@ -86,6 +101,8 @@ export default function Header() {
         </div></nav>
         <div className="responsive-menu">{open && <div className="slicknav_menu"><ul className="slicknav_nav" onClick={close}>
           <li><Link href="/">Home</Link></li><li><Link href="/about">About Us</Link></li><li><Link href="/services">Services</Link></li>
+          <li><Link href="/products">Our Products</Link></li>
+          <li style={{ paddingLeft: '14px' }}><Link href="/products/wedding-themes">• Wedding Invitation Themes</Link></li>
           <li><Link href="/portfolio">Portfolio</Link></li>
           <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/website-design">• Website Design Portfolio</Link></li>
           <li style={{ paddingLeft: '14px' }}><Link href="/portfolio/mobile-app">• Mobile App Portfolio</Link></li>
